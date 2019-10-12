@@ -1,6 +1,10 @@
 import React from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
 
+//*Pages
+import About from './components/pages/About';
+import Home from './components/pages/Home';
+
 //*Bootstrap Imports
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -18,7 +22,7 @@ function App()
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=""></Nav>
           <Nav>
-            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink exact className="nav-link" to="/">Home</NavLink>
             <NavLink className="nav-link" to="/games">Games</NavLink>
             <NavLink className="nav-link" to="/software">Software</NavLink>
             <NavLink className="nav-link" to="/art">Art</NavLink>
@@ -27,10 +31,11 @@ function App()
         </Navbar.Collapse>
       </Navbar>
 
+      <div className="mb-3" />
 
       <Switch>
-        <Route exact path="/"></Route>
-        <Route path="/about"></Route>
+        <Route exact path="/"><Home /></Route>
+        <Route path="/about"><About /></Route>
         <Route path="/text"></Route>
       </Switch>
     </div>
