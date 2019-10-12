@@ -7,9 +7,13 @@ export default function About()
 {
     return (
         <Container className="text-center">
-            <Row>
+            <Row className="headerRow mb-3 rounded">
                 <Col>
                     <h1>About</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
                     <p>
                         Hello, I am a person on the internet.<br />
                         <u>I write code, and make websites.</u> <br />

@@ -4,6 +4,9 @@ import { Switch, Route, NavLink } from 'react-router-dom';
 //*Pages
 import About from './components/pages/About';
 import Home from './components/pages/Home';
+import Games from './components/pages/Games';
+import Websites from './components/pages/Websites';
+import Art from './components/pages/Art';
 
 //*Bootstrap Imports
 import Navbar from 'react-bootstrap/Navbar';
@@ -24,8 +27,9 @@ function App()
           <Nav>
             <NavLink exact className="nav-link" to="/">Home</NavLink>
             <NavLink className="nav-link" to="/games">Games</NavLink>
-            <NavLink className="nav-link" to="/software">Software</NavLink>
+            <NavLink className="nav-link" to="/websites">Websites</NavLink>
             <NavLink className="nav-link" to="/art">Art</NavLink>
+            <NavLink className="nav-link" to="/furry">Furry</NavLink>
             <NavLink className="nav-link" to="/about">About</NavLink>
           </Nav>
         </Navbar.Collapse>
@@ -36,7 +40,9 @@ function App()
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="/about"><About /></Route>
-        <Route path="/text"></Route>
+        <Route path="/games"><Games /></Route>
+        <Route path="/websites"><Websites /></Route>
+        <Route path="/art"><Art /></Route>
       </Switch>
     </div>
   );
