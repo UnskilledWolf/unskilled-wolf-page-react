@@ -20,7 +20,7 @@ function App()
   return (
     <div className="App">
       <Navbar bg="custom" variant="dark" expand="lg">
-        <Navbar.Brand className="mr-3"><NavLink to="/" class="navbar-brand mr-0">Unskilled Wolf</NavLink></Navbar.Brand>
+        <Navbar.Brand className="mr-3"><NavLink to="/" className="navbar-brand mr-0">Unskilled Wolf</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=""></Nav>

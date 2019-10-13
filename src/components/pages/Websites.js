@@ -2,16 +2,13 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Title from '../Title';
 
 export default function Websites()
 {
     return (
         <Container>
-            <Row className="headerRow mb-3 rounded">
-                <Col>
-                    <h1>Websites</h1>
-                </Col>
-            </Row>
+            <Title>Websites</Title>
             <Row>
                 <Col>
                     <p>

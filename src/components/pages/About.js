@@ -2,16 +2,13 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Title from '../Title'
 
 export default function About()
 {
     return (
         <Container className="text-center">
-            <Row className="headerRow mb-3 rounded">
-                <Col>
-                    <h1>About</h1>
-                </Col>
-            </Row>
+            <Title>About</Title>
             <Row>
                 <Col>
                     <p>

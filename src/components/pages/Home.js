@@ -3,32 +3,40 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Particles from 'react-particles-js';
+import Section from '../HomeSection'
 
 export default function Home()
 {
     return (
-        <Container>
-            <Row className="my-5">
-                <Col className="particleCol rounded text-center">
-                    <div class="particelText">
-                        <h1>Unskilled Wolf</h1>
-                        <sub>AKA: Hexagonal192</sub>
-                    </div>
-                    <Particles params={PARTICLE_PARAMS} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2>This is a page about me!</h2>
-                    <p>
-                        This is a collection of things, that I made and some information about me, I have art, (simple)games, and eventually I will hopefully make some useful software.
+        <React.Fragment>
+            <Container fluid className="my-5">
+                <Row>
+                    <Col className="particleCol rounded text-center">
+                        <div className="particelText">
+                            <h1>Unskilled Wolf</h1>
+                            <sub>AKA: Hexagonal192</sub>
+                        </div>
+                        <Particles params={PARTICLE_PARAMS} />
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col>
+                        <h2>This is a page about me!</h2>
+                        <p>
+                            This is a collection of things, that I made and some information about me, I have art, (simple)games, and eventually I will hopefully make some useful software.
                         <br />
-                        <i>Obviously, don't use my code, art, or characters without my permission</i>
-                    </p>
-                    <p>TODO: Add more information</p>
-                </Col>
-            </Row>
-        </Container>
+                            <i>Obviously, don't use my code, art, or characters without my permission</i>
+                        </p>
+                        <Section title="Games" image={require("../../assets/code.png")}>I create Video games!. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
+                        <Section title="Web Design" image={require("../../assets/game.png")}>I design websites. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
+                        <Section title="Art" image={require("../../assets/art.png")}>I make are. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator..</Section>
+                        <Section title="Furry" image={require("../../assets/furry.png")}>I am a furry. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
+                    </Col>
+                </Row>
+            </Container>
+        </React.Fragment>
     )
 }
 
