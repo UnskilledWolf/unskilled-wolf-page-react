@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Games from './components/pages/Games';
 import Websites from './components/pages/Websites';
 import Art from './components/pages/Art';
+import Characters from './components/pages/Characters';
 
 //*Bootstrap Imports
 import Navbar from 'react-bootstrap/Navbar';
@@ -29,6 +30,7 @@ function App()
             <NavLink className="nav-link" to="/games">Games</NavLink>
             <NavLink className="nav-link" to="/websites">Websites</NavLink>
             <NavLink className="nav-link" to="/art">Art</NavLink>
+            <NavLink className="nav-link" to="/characters">Characters</NavLink>
             <NavLink className="nav-link" to="/about">About</NavLink>
           </Nav>
         </Navbar.Collapse>
@@ -42,6 +44,7 @@ function App()
         <Route path="/games"><Games /></Route>
         <Route path="/websites"><Websites /></Route>
         <Route path="/art"><Art /></Route>
+        <Route path="/characters"><Characters /></Route>
       </Switch>
     </div>
   );

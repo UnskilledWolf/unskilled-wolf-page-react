@@ -88,3 +88,15 @@ ul {
   color: inherit;
   text-decoration: inherit;
 }
+
+.linedTitle {
+  border-color: #00a3b9 #a6a6a6 #00a3b9 #a6a6a6;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  text-align: center;
+  transition: border-width 0.3s ease-out;
+
+  &:hover {
+    border-width: 0 0 5px 0;
+  }
+}
