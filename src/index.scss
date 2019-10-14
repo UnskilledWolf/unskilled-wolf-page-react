@@ -94,9 +94,16 @@ ul {
   border-style: solid;
   border-width: 0 0 3px 0;
   text-align: center;
-  transition: border-width 0.3s ease-out;
+  transition: border-width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover {
     border-width: 0 0 5px 0;
   }
+}
+
+.section {
+  border-color: #464646;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  padding-top: 3px;
 }

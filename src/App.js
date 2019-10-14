@@ -7,11 +7,12 @@ import Home from './components/pages/Home';
 import Games from './components/pages/Games';
 import Websites from './components/pages/Websites';
 import Art from './components/pages/Art';
-import Characters from './components/pages/Characters';
+import Furry from './components/pages/Furry';
 
 //*Bootstrap Imports
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -30,7 +31,7 @@ function App()
             <NavLink className="nav-link" to="/games">Games</NavLink>
             <NavLink className="nav-link" to="/websites">Websites</NavLink>
             <NavLink className="nav-link" to="/art">Art</NavLink>
-            <NavLink className="nav-link" to="/characters">Characters</NavLink>
+            <NavLink className="nav-link" to="/furry">Furry</NavLink>
             <NavLink className="nav-link" to="/about">About</NavLink>
           </Nav>
         </Navbar.Collapse>
@@ -44,7 +45,7 @@ function App()
         <Route path="/games"><Games /></Route>
         <Route path="/websites"><Websites /></Route>
         <Route path="/art"><Art /></Route>
-        <Route path="/characters"><Characters /></Route>
+        <Route path="/furry"><Furry /></Route>
       </Switch>
     </div>
   );
