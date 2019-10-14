@@ -18,7 +18,7 @@ export default function Websites()
                     </p>
                 </Col>
                 <Col className="justify-content-center text-center">
-                    <Image src="https://via.placeholder.com/450" />
+                    <Image src={require("../../assets/sites.png")} />
                 </Col>
             </Row>
         </Container>

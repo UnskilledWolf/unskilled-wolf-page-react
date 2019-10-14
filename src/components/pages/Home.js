@@ -29,10 +29,15 @@ export default function Home()
                         <br />
                             <i>Obviously, don't use my code, art, or characters without my permission</i>
                         </p>
-                        <Section href="/games" title="Games" image={require("../../assets/code.png")}>I create Video games!. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
-                        <Section href="/websites" title="Web Design" image={require("../../assets/game.png")}>I design websites. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
-                        <Section href="/art" title="Art" image={require("../../assets/art.png")}>I make are. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator..</Section>
-                        <Section href="/furry" title="Furry" image={require("../../assets/furry.png")}>I am a furry. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.</Section>
+                        <Section href="/art" title="Art" image={require("../../assets/index_art.png")}>
+                            I make are. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator..
+                        </Section>
+                        <Section href="/websites" title="Web Design" image={require("../../assets/index_games.png")}>
+                            I design websites. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.
+                        </Section>
+                        <Section href="/games" title="Games" image={require("../../assets/index_code.png")}>
+                            I create Video games!. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.
+                        </Section>
                     </Col>
                 </Row>
             </Container>

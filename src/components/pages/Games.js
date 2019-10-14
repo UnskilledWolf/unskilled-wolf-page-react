@@ -16,7 +16,7 @@ export default function Games()
                     <p>I prefer to use Unity3D to create my games, but I have also created some small thing in Processing, and just some plain text things in some other languages.</p>
                 </Col>
                 <Col className="justify-content-center text-center">
-                    <Image src="https://via.placeholder.com/450" />
+                    <Image src={require("../../assets/games.png")} />
                 </Col>
             </Row>
         </Container>

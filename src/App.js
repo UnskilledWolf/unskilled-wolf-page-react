@@ -29,7 +29,6 @@ function App()
             <NavLink className="nav-link" to="/games">Games</NavLink>
             <NavLink className="nav-link" to="/websites">Websites</NavLink>
             <NavLink className="nav-link" to="/art">Art</NavLink>
-            <NavLink className="nav-link" to="/furry">Furry</NavLink>
             <NavLink className="nav-link" to="/about">About</NavLink>
           </Nav>
         </Navbar.Collapse>
