@@ -13,9 +13,9 @@ import Furry from './components/pages/Furry';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App()
 {
@@ -47,6 +47,16 @@ function App()
         <Route path="/art"><Art /></Route>
         <Route path="/furry"><Furry /></Route>
       </Switch>
+
+      <footer className="text-center mt-5">
+        <Container className="mt-1">
+          <Row>
+            <Col>
+              <p>© Unskilled Wolf</p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </div>
   );
 }

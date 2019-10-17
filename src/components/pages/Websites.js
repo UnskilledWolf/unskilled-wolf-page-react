@@ -13,7 +13,7 @@ export default function Websites()
             <Row>
                 <Col>
                     <p>
-                        I create websites. I use ReactJS to create them, but I used to use regular HTML, CSS, and JS before. I also know how do create basci APIs in node, and access databases.<br />
+                        I create websites. I currently use ReactJS to create them, but I can also make sutes using only regular HTML, CSS, and JS. I also know how do create basci APIs in nodeJS, and a bit about databases.<br />
                         I obvioudly created this website myself.
                     </p>
                 </Col>

@@ -21,7 +21,7 @@ export default function Art()
                 <Col className="text-center">
                     <h3>DeviantArt Gallery</h3>
                     <Gallery gallery_owner="hexagonal192" />
-                    <sub>Images loaded from DeviantArt RRS API and oEmbed API</sub>
+                    <sub>Images loaded from DeviantArt RRS API and oEmbed API. <br />This may take a secong</sub>
                 </Col>
             </Row>
         </Container >

@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Particles from 'react-particles-js';
-import Section from '../HomeSection'
+import Section from '../HomeSection';
+import { Link } from 'react-router-dom';
 
 export default function Home()
 {
@@ -25,18 +26,18 @@ export default function Home()
                     <Col>
                         <h2>This is a page about me!</h2>
                         <p>
-                            This is a collection of things, that I made and some information about me, I have art, (simple)games, and eventually I will hopefully make some useful software.
+                            This is a collection of things, that I made and some information about me, I create art, (simple)games, and websites.
                         <br />
                             <i>Obviously, don't use my code, art, or characters without my permission</i>
                         </p>
                         <Section href="/art" title="Art" image={require("../../assets/index_art.png")}>
-                            I make are. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator..
+                            I make create art, mainly digitally. Although I am still learning, I my art is getting 'good enough' quality whise. I create my art digitally, rastered and vectored. I also make some pixel are every once in a while. I am also working on learning to animate.<br />You can see my art on my DeviantArt page.
                         </Section>
                         <Section href="/websites" title="Web Design" image={require("../../assets/index_games.png")}>
-                            I design websites. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.
+                            I design websites, currently I only have experiecne making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. The create site, I use ReactJS.
                         </Section>
                         <Section href="/games" title="Games" image={require("../../assets/index_code.png")}>
-                            I create Video games!. Lorem ipsum whatever whatever. I am just writing this because I am too lazy to got to a lorem ipsum generator.
+                            I create Video games, I mainly make verry small and simple games, and just some experiments with different engines and Processing.
                         </Section>
                     </Col>
                 </Row>
