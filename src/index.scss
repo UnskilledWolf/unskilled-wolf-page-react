@@ -20,9 +20,13 @@ body {
   }
 }
 
-ul {
+.about ul {
   text-align: center;
   list-style-position: inside;
+}
+
+ul {
+  padding-left: 15px;
 }
 
 .headerRow {

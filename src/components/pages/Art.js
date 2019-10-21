@@ -14,7 +14,7 @@ export default function Art()
             <Row className="text-center">
                 <Col>
                     <h5>You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a></h5>
-                    <p>I mainly draw furrys, but I also create some vector art, and I am slowly starting to draw terrain.</p>
+                    <p>I mainly draw furry characters, but I also create some vector and pixel art, and I am slowly starting to draw terrain.</p>
                 </Col>
             </Row>
             <Row>

@@ -22,11 +22,11 @@ export default function Character(props)
                     </Col>
                     <Col className="ml-1">
                         <Row>
-                            <p>
+                            <ul>
                                 {Object.keys(props.notes).map((element, index) => (
-                                    <React.Fragment key={index}>{element}: {props.notes[element]}<br /></React.Fragment>
+                                    <li key={index}>{element}: {props.notes[element]}</li>
                                 ))}
-                            </p>
+                            </ul>
                         </Row>
                         {props.sections.map((element, index) => (
 

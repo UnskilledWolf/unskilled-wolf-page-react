@@ -13,8 +13,8 @@ export default function Websites()
             <Row>
                 <Col>
                     <p>
-                        I create websites. I currently use ReactJS to create them, but I can also make sutes using only regular HTML, CSS, and JS. I also know how do create basci APIs in nodeJS, and a bit about databases.<br />
-                        I obvioudly created this website myself.
+                        I create websites. I currently use ReactJS to create them, but used to make them only regular HTML, CSS, and JS. I also working on learning how to make NodeJS servers.<br />
+                        I obviously created this website myself.
                     </p>
                 </Col>
                 <Col className="justify-content-center text-center">

@@ -7,29 +7,16 @@ import Title from '../Title'
 export default function About()
 {
     return (
-        <Container className="text-center">
+        <Container className="text-center about">
             <Title>About</Title>
             <Row>
                 <Col>
                     <p>
-                        Hello, I am a person on the internet.<br />
-                        <u>I write code, and make websites.</u> <br />
-                        <u>I also create art.</u>
+                        Hello, I am a person on the internet. I call myself unskilled wolf, because of my skill at video games<br />
+                        I write code, and make websites, I also create art.
                     </p>
                     <p>
-                        I started learning programming at a relatively young age. I have learned a few languages so far. These are all I know how to use.<br />
-                        <ul>
-                            <li>C#</li>
-                            <li>Unity Engine C#</li>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML & CSS</li>
-                            <li>PHP</li>
-                            <li>Processing 3</li>
-                            <li>Bash</li>
-                            <li>ReactJS</li>
-                        </ul>
+                        I started learning programming at a relatively young age. I have learned a few languages so far. For example, C# (Including Unity C#), C++, Python, JS, Processing 3, Bash, ReactJS, and PHP.
                     </p>
                     <p>
                         <i>Obviously, don't use my code, art, or characters without my permission</i>

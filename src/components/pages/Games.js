@@ -12,8 +12,8 @@ export default function Games()
             <Title>Games</Title>
             <Row>
                 <Col>
-                    <p>I do create games, but most of the are old and not to my standarts. There will me new ones someting soon though.</p>
-                    <p>I prefer to use Unity3D to create my games, but I have also created some small thing in Processing, and just some terminal text things in some other languages.</p>
+                    <p>I do create games, but most of them are old and not reflect my current skill level. I will work on creating new games sometime soon though.</p>
+                    <p>I prefer to use Unity3D to create my games, but I have also created some small things in Processing, and just some terminal text things in some other languages.</p>
                 </Col>
                 <Col className="justify-content-center text-center">
                     <Image src={require("../../assets/games.png")} />

@@ -26,18 +26,19 @@ export default function Home()
                     <Col>
                         <h2>This is a page about me!</h2>
                         <p>
-                            This is a collection of things, that I made and some information about me, I create art, (simple)games, and websites.
+                            This is a growing collection of things, that I made and some information about me. I create art, (simple)games, scripts, and websites.
                         <br />
                             <i>Obviously, don't use my code, art, or characters without my permission</i>
                         </p>
                         <Section href="/art" title="Art" image={require("../../assets/index_art.png")}>
-                            I make create art, mainly digitally. Although I am still learning, I my art is getting 'good enough' quality whise. I create my art digitally, rastered and vectored. I also make some pixel are every once in a while. I am also working on learning to animate.<br />You can see my art on my DeviantArt page.
+                            I like to create digital art. Although I am still learning, I think my art is getting 'good enough' quality wise, but I still need to improve. I also make some pixel art occasionally. I am also working on learning to animate.<br />You can see my art on my DeviantArt page.
                         </Section>
                         <Section href="/websites" title="Web Design" image={require("../../assets/index_games.png")}>
-                            I design websites, currently I only have experiecne making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. The create site, I use ReactJS.
+                            I design websites, currently I only have experience making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. The create site, I use ReactJS.<br />I am also slowly starting to learn how to make NodeJS back-ends.
+
                         </Section>
                         <Section href="/games" title="Games" image={require("../../assets/index_code.png")}>
-                            I create Video games, I mainly make verry small and simple games, and just some experiments with different engines and Processing.
+                            I create Video Games, I mainly make very small and simple games, and just some experiments with different engines, like Processing and Unity3D.
                         </Section>
                     </Col>
                 </Row>
