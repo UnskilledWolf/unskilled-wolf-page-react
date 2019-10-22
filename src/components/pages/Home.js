@@ -27,7 +27,8 @@ export default function Home()
                         <h2>This is a page about me!</h2>
                         <p>
                             This is a growing collection of things, that I made and some information about me. I create art, (simple)games, scripts, and websites.
-                        <br />
+                        </p>
+                        <p>
                             <i>Obviously, don't use my code, art, or characters without my permission</i>
                         </p>
                         <Section href="/art" title="Art" image={require("../../assets/index_art.png")}>
