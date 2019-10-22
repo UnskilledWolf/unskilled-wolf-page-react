@@ -78,10 +78,8 @@ ul {
 }
 
 .paralaxImage {
-  height: 400px;
-  width: 100%;
   background-attachment: fixed;
-  background-position: right top;
+  background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -117,6 +115,18 @@ ul {
   border-style: solid;
   border-width: 1px 0 0 0;
   padding-top: 3px;
+}
+
+.particle-footer {
+  position: relative;
+  top: -90px;
+}
+
+.footer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {

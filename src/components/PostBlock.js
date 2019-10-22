@@ -51,7 +51,7 @@ class PostBlock extends Component
         const { title, content, link } = this.props.post;
 
         return (
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} >
                 <Card.Img variant="top" src={this.getImage()} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
