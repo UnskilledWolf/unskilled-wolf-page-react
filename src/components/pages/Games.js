@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Title from '../Title';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 
 export default function Games()
 {
@@ -16,9 +16,10 @@ export default function Games()
                     <p>I prefer to use Unity3D to create my games, but I have also created some small things in Processing, and just some terminal text things in some other languages.</p>
                 </Col>
                 <Col className="justify-content-center text-center">
-                    <Image src={require("../../assets/games.png")} />
+                    {/* <Image src={require("../../assets/games.svg")} /> */}
+                    <div className="gradiant-fade" style={{ MaskImage: `url(${require('../../assets/games.svg')})`, webkitMaskImage: `url(${require('../../assets/games.svg')})` }} />
                 </Col>
             </Row>
-        </Container>
+        </Container >
     )
 }

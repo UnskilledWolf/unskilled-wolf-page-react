@@ -20,14 +20,7 @@ body {
   }
 }
 
-.about ul {
-  text-align: center;
-  list-style-position: inside;
-}
-
-ul {
-  padding-left: 15px;
-}
+/*Home*/
 
 .headerRow {
   // background-color: #464646;
@@ -63,6 +56,19 @@ ul {
   }
 }
 
+.paralaxImage {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: 1760px) {
+    background-attachment: scroll;
+  }
+}
+
+/*Home Section*/
+
 .homeSection {
   background-color: #0d0d0d;
   padding: 4px 10px 4px 10px;
@@ -70,44 +76,43 @@ ul {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
   transition: 0.3s ease-out;
 
-  &:hover {
+  &:hover,
+  &:hover img {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
   }
 
   color: $text;
 }
 
-.paralaxImage {
-  background-attachment: fixed;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+.fade-image {
+  transform: translate(0, -25%);
+  opacity: 0;
+  position: relative;
+}
 
-  // @media only screen and (max-width: 1760px) {
-  //   background-attachment: scroll;
-  // }
+.fade-image-animate {
+  animation-name: fade-image-ani;
+  animation-duration: 1.5s;
+  animation-delay: 700ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-image-ani {
+  from {
+    transform: translate(0, -25%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
 }
 
 .sectionImage {
   height: 400px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.8);
   // width: 100%;
-}
-
-.removeLinkStyle {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.linedTitle {
-  border-color: #00a3b9 #a6a6a6 #00a3b9 #a6a6a6;
-  border-style: solid;
-  border-width: 0 0 3px 0;
-  text-align: center;
-  transition: border-width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-
-  &:hover {
-    border-width: 0 0 5px 0;
-  }
 }
 
 .section {
@@ -116,6 +121,8 @@ ul {
   border-width: 1px 0 0 0;
   padding-top: 3px;
 }
+
+/*Footer*/
 
 .particle-footer {
   position: relative;
@@ -139,4 +146,56 @@ footer {
   background-color: darken($dark-bg, 5%);
   color: $blue;
   padding: 5px 0 5px 0;
+}
+
+/*Misc*/
+
+.removeLinkStyle {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.linedTitle {
+  border-color: #00a3b9 #a6a6a6 #00a3b9 #a6a6a6;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  text-align: center;
+  transition: border-width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  &:hover {
+    border-width: 0 0 5px 0;
+  }
+}
+.about ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+.gradiant-fade {
+  height: 450px;
+  width: 450px;
+  background: linear-gradient(45deg, white, $blue, white);
+  background-size: 400% 400%;
+  // mask-image: url("/games.svg#Main");
+  // mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  animation: gradiant-fade-ani 40s ease infinite;
+}
+
+@keyframes gradiant-fade-ani {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
