@@ -61,10 +61,11 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #464646;
 
-  @media only screen and (max-width: 1760px) {
-    background-attachment: scroll;
-  }
+  // @media only screen and (max-width: 1760px) {
+  //   background-attachment: scroll;
+  // }
 }
 
 /*Home Section*/
@@ -93,7 +94,7 @@ body {
 .fade-image-animate {
   animation-name: fade-image-ani;
   animation-duration: 1.5s;
-  animation-delay: 700ms;
+  animation-delay: 800ms;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   animation-fill-mode: forwards;
 }
@@ -185,17 +186,26 @@ ul {
   mask-position: center;
   mask-repeat: no-repeat;
 
-  animation: gradiant-fade-ani 40s ease infinite;
+  animation: gradiant-fade-ani 30s ease infinite;
 }
 
 @keyframes gradiant-fade-ani {
-  0% {
+  from {
     background-position: 0% 50%;
   }
-  50% {
+  to {
     background-position: 100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
-  }
 }
+
+// @keyframes gradiant-fade-ani {
+//   0% {
+//     background-position: 0% 50%;
+//   }
+//   50% {
+//     background-position: 100% 50%;
+//   }
+//   100% {
+//     background-position: 0% 50%;
+//   }
+// }
