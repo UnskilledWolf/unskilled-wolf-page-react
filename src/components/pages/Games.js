@@ -14,6 +14,7 @@ export default function Games()
                 <Col>
                     <p>I do create games, but most of them are old and not reflect my current skill level. I will work on creating new games sometime soon though.</p>
                     <p>I prefer to use Unity3D to create my games, but I have also created some small things in Processing, and just some terminal text things in some other languages.</p>
+                    <p>I also have some games on <a href="https://ldjam.com/users/gerox">Ludum Dare</a></p>
                 </Col>
                 <Col className="justify-content-center text-center">
                     {/* <Image src={require("../../assets/games.svg")} /> */}

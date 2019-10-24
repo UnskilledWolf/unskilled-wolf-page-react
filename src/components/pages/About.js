@@ -59,8 +59,8 @@ export default class About extends React.Component
                         <p>
                             <a href="https://github.com/UnskilledWolf">GitHub</a> |
                         <a href="https://www.deviantart.com/hexagonal192">DeviantArt</a> |
-                        <a href="https://twitter.com/Unskilled_Wolf">Twitter</a> |
-                        <a href="/about">Furaffinity<sub>sometime</sub></a>
+                        <a href="https://twitter.com/Unskilled_Wolf">Twitter</a>
+                            {/* <a href="/about">Furaffinity<sub>sometime</sub></a> */}
                         </p>
                     </Col>
                 </Row>
