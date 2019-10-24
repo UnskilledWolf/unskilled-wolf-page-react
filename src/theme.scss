@@ -1,7 +1,7 @@
 $dark-bg: #181818;
 $blue: #00a3b9;
 $text: #dffcff;
-$success: $blue;
+// $success: $blue;
 $primary: $blue;
 
 $font-family-sans-serif: Roboto, Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -47,6 +47,12 @@ $dropdown-color: $dark-bg;
 $dropdown-bg: lighten($blue, 30%);
 $dropdown-border-color: $dark-bg;
 
+$input-bg: #464646;
+$input-border-color: #363636;
+$input-color: $text;
+$input-focus-border-color: #00a3b9;
+$input-focus-box-shadow: none;
+
 //Overwrite Bootstrap
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
@@ -63,3 +69,4 @@ $dropdown-border-color: $dark-bg;
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/forms";

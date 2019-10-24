@@ -179,23 +179,47 @@ ul {
 .gradiant-fade {
   height: 450px;
   width: 450px;
-  background: linear-gradient(45deg, white, $blue, white);
+  background: #00a3b9;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 163, 185, 1) 0%,
+    rgba(0, 163, 185, 1) 25%,
+    rgba(223, 252, 255, 1) 50%,
+    rgba(223, 252, 255, 1) 60%,
+    rgba(223, 252, 255, 0) 100%
+  );
   background-size: 400% 400%;
   // mask-image: url("/games.svg#Main");
   // mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;
 
-  animation: gradiant-fade-ani 30s ease infinite;
+  animation-name: gradiantFadeAni;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
-@keyframes gradiant-fade-ani {
+@keyframes gradiantFadeAni {
   from {
-    background-position: 0% 50%;
+    opacity: 0;
+    background-position: 50% 100%;
+  }
+  20% {
+    opacity: 1;
   }
   to {
-    background-position: 100% 50%;
+    opacity: 1;
+    background-position: 50% 0%;
   }
+}
+
+.form {
+  border-style: solid;
+  border-color: #464646;
+  border-width: 0.1rem;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 // @keyframes gradiant-fade-ani {

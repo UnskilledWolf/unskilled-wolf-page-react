@@ -18,6 +18,7 @@ export default function Games()
                 <Col className="justify-content-center text-center">
                     {/* <Image src={require("../../assets/games.svg")} /> */}
                     <div className="gradiant-fade" style={{ MaskImage: `url(${require('../../assets/games.svg')})`, webkitMaskImage: `url(${require('../../assets/games.svg')})` }} />
+                    {/* <div className="gradiant-fade" /> */}
                 </Col>
             </Row>
         </Container >

@@ -32,18 +32,18 @@ export default function Home()
             <Container>
                 <Row>
                     <Col>
-                        <h2>This is a page about me!</h2>
+                        <h2>A page about me!</h2>
                         <p>
-                            This is a growing collection of things, that I made and some information about me. I create art, (simple)games, scripts, and websites.
+                            This is a growing collection of things, that I made and some information about me. I create art, (simple) games, scripts, and websites.
                         </p>
                         <p className="mb-5">
-                            <i>Obviously, don't use my code, art, or characters without my permission</i>
+                            <i>Obviously, don't use my code, art, or characters without my permission.</i>
                         </p>
                         <Section href="/art" title="Art" image={require("../../assets/index_art.png")}>
-                            I like to create digital art. Although I am still learning, I think my art is getting 'good enough' quality wise, but I still need to improve. I also make some pixel art occasionally. I am also working on learning to animate.<br />You can see my art on my DeviantArt page.
+                            I like to create digital art. Although I am still learning, I think my art is getting 'good enough' quality wise, but I still need to improve. I also make some pixel art occasionally. Additionaly, I am working on learning to animate.<br />You can see my art on my DeviantArt page.
                         </Section>
                         <Section href="/websites" title="Web Design" image={require("../../assets/index_games.png")}>
-                            I design websites, currently I only have experience making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. The create site, I use ReactJS.<br />I am also slowly starting to learn how to make NodeJS back-ends.
+                            I design websites, currently I only have experience making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. To create a site, I use ReactJS.<br />I am also slowly starting to learn how to make NodeJS back-ends.
 
                         </Section>
                         <Section href="/games" title="Games" image={require("../../assets/index_code.png")}>
