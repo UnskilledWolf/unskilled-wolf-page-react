@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Title from '../Title';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 
-const FORM_ACTION = "https://formspree.io/mqkzpbrg";
+// const FORM_ACTION = "https://formspree.io/mqkzpbrg";
 // const FORM_ACTION = "";
 
 export default class About extends React.Component
@@ -67,8 +67,8 @@ export default class About extends React.Component
                 <Row>
                     <Col>
                         <h3>Contact</h3>
-                        <p>If you want to contact me, send me a note on DeviantArt or use this formular.</p>
-                        <Form onSubmit={this.submitForm} action={FORM_ACTION} method="POST" className="form">
+                        <p>If you want to contact me, send me a note on DeviantArt or a DM on Twitter.</p>
+                        {/* <Form onSubmit={this.submitForm} action={FORM_ACTION} method="POST" className="form">
                             <Form.Group>
                                 <Form.Label>Name <small>(or Username)</small></Form.Label>
                                 <Form.Control type="text" name="name" />
@@ -83,7 +83,7 @@ export default class About extends React.Component
                             </Form.Group>
                             {this.state.status === "SUCCESS" ? <Button variant="success" disabled>Submited</Button> : <Button variant="primary" type="submit">Submit</Button>}
                             {this.state.status === "ERROR" && <p className="mt-1">There has been an error!</p>}
-                        </Form>
+                        </Form> */}
                     </Col>
                 </Row>
             </Container>
