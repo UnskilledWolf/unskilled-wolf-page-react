@@ -10,16 +10,32 @@ $font-family-base: Roboto, Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Se
 $body-bg: $dark-bg;
 $body-color: $text;
 
-$navbar-dark-color: #fff;
-$navbar-dark-hover-color: $dark-bg;
+$navbar-dark-color: $text;
+$navbar-dark-hover-color: $text;
 $navbar-dark-active-color: $dark-bg;
 $navbar-dark-brand-color: $text;
 $navbar-dark-brand-hover-color: $dark-bg;
+$navbar-padding-y: 0.2rem / 2;
+// $navbar-padding-x: 0.2rem;
 .navbar {
-  transition: 0.3s;
+  transition: 0.3s ease-out;
   box-shadow: 0px 0px 0px 0px darken($blue, 70%);
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
   &:hover {
     box-shadow: 0px 3px 5px 0px darken($blue, 70%);
+  }
+
+  & .navbar-nav > .nav-link {
+    box-shadow: inset 0px 0px 0px 0px $text;
+    &:hover {
+      box-shadow: inset 0px -5px 0px 0px $text;
+    }
+
+    &.active {
+      box-shadow: inset 0px 0px 0px 0px $dark-bg;
+    }
   }
 }
 .navbar-brand {

@@ -222,14 +222,22 @@ ul {
   padding: 10px;
 }
 
-// @keyframes gradiant-fade-ani {
-//   0% {
-//     background-position: 0% 50%;
-//   }
-//   50% {
-//     background-position: 100% 50%;
-//   }
-//   100% {
-//     background-position: 0% 50%;
-//   }
-// }
+// Navbar
+.forst-bg {
+  background: none !important;
+  backdrop-filter: blur(3px);
+  &::after {
+    position: absolute;
+    z-index: -1;
+
+    top: auto;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: $blue;
+    opacity: 0.2;
+    content: "";
+  }
+}
