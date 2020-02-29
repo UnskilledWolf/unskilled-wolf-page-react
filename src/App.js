@@ -8,7 +8,7 @@ import Home from './components/pages/Home';
 import Games from './components/pages/Games';
 import Websites from './components/pages/Websites';
 import Art from './components/pages/Art';
-import Furry from './components/pages/Furry';
+// import Furry from './components/pages/Furry';
 
 //*Bootstrap Imports
 import NavBar from './components/Navbar'
@@ -26,12 +26,12 @@ function App()
       <div className="mb-3" />
 
       <Switch>
-        <Route exact path="/"><Home /></Route>
-        <Route path="/about"><About /></Route>
-        <Route path="/games"><Games /></Route>
-        <Route path="/websites"><Websites /></Route>
-        <Route path="/art"><Art /></Route>
-        <Route path="/furry"><Furry /></Route>
+        <Route exact path="/"><Home key="Home" /></Route>
+        <Route path="/about"><About key="About" /></Route>
+        <Route path="/games"><Games key="Games" /></Route>
+        <Route path="/websites"><Websites key="Websites" /></Route>
+        <Route path="/art"><Art key="Art" /></Route>
+        {/* <Route path="/furry"><Furry key="Furry"/></Route> */}
       </Switch>
 
       <footer className="text-center mt-5">

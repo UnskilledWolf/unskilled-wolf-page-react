@@ -2,37 +2,6 @@
 
 This project was made with [Create React App](https://github.com/facebook/create-react-app).
 
-## Dependencies
-+ **axios** - Used for getting Galleys
-+ **bootstrap** - Used for responsive styling
-+ **node-sass** - Used to compile SASS
-+ **react** - ReactJS
-+ **react-bootstrap** - Used for responsive styling
-+ **react-dom** - ReactJS
-+ **react-particles-js** - Used in footer
-+ **react-reveal** - Used in Home Sections as nice animations
-+ **react-router-dom** - Used for links and routing
-+ **react-scripts** - ReactJS
-+ **rss-parser** - Used for getting Galleys
-
-## File Structure
-```
-schneiderei-react
-+-- public
-    (This contains favico, etc)
-+-- src
-    +-- assets
-        (Various assets and images)
-    +-- components
-        +-- pages
-            (All pages as react components)
-        (Any reused components)
-    App.js (Main app)
-    Index.js
-    index.scss (Main styling)
-    theme.scss (Bootstrap styling)
-```
-
 ## Pages
 Page components in `/src/components/pages`
 
@@ -44,7 +13,6 @@ Page components in `/src/components/pages`
 + **About** from `About.js` at `/about`
 
 ## Components
-Components are in `/src/components/`
 
 ### Gallery
 ```html
@@ -82,15 +50,8 @@ Just a template for a title row. It created the following:
     </Col>
 </Row>
 ```
-
-### Character - **Current unused**
+## NavBar
 ```html
-<Character name="Name" image="Image" notes={
-{
-    "ul": "list items",
-    "Listed": "Here"
-}} sections={[
-    "Just an array of strings",
-    "That creates sepperated sections"
-]} />
+<NavBar />
 ```
+Just the NavBar.

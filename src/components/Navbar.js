@@ -19,7 +19,7 @@ export default class NavBar extends Component
 
     handleScroll = (e) =>
     {
-        console.log(this.navRef.current.offsetTop - document.body.scrollTop)
+        // console.log(this.navRef.current.offsetTop - document.body.scrollTop)
         if (this.navRef.current.offsetTop - document.body.scrollTop > 75)
         {
             this.navRef.current.classList.add("forst-bg")

@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Particles from 'react-particles-js';
 import Section from '../HomeSection';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Home()
 {
@@ -43,7 +43,7 @@ export default function Home()
                             I like to create digital art. Although I am still learning, I think my art is getting 'good enough' quality wise, but I still need to improve. I also make some pixel art occasionally. Additionaly, I am working on learning to animate.<br />You can see my art on my DeviantArt page.
                         </Section>
                         <Section href="/websites" title="Web Design" image={require("../../assets/index_code.png")}>
-                            I design websites, currently I only have experience making static sites, but I am trying to use some APIs, for example my <Link to="/art">Art</Link> page uses DeviantArt's API. To create a site, I use ReactJS.<br />I am also slowly starting to learn how to make NodeJS back-ends.
+                            I design websites, currently I only have experience making static sites, but I am trying to use some APIs, for example my <i>Art</i> page uses DeviantArt's API. To create a site, I use ReactJS.<br />I am also slowly starting to learn how to make NodeJS back-ends.
 
                         </Section>
                         <Section href="/games" title="Games" image={require("../../assets/index_games.png")}>
