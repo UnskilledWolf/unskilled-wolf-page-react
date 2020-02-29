@@ -4,7 +4,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
+//! import Fade from 'react-reveal/Fade';
+
+//! Currently Broken, becuase react-reveal is gone
 
 export default function Character(props)
 {

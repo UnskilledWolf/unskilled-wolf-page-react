@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 // import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
+import Fade from './Fade';
 
 export default class HomeSection extends React.Component
 {
@@ -23,7 +23,7 @@ export default class HomeSection extends React.Component
     render()
     {
         return (
-            <Fade left onReveal={this.activetAnimation}>
+            <Fade onReveal={this.activetAnimation}>
                 <Link to={this.props.href} style={{ textDecoration: 'none' }}>
                     <Row className="homeSection rounded mb-3">
                         <div className="homeGradient" />
