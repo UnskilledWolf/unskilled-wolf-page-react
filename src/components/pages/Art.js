@@ -14,14 +14,14 @@ export default function Art()
             <Row className="text-center">
                 <Col>
                     <h5>You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a></h5>
-                    <p>I mainly draw furry characters, but I also create some vector and pixel art, and I am slowly starting to draw terrain.</p>
+                    <p>I mainly draw furry characters, but I also create some vector and pixel art, and I am slowly starting to draw terrain and animations.</p>
                 </Col>
             </Row>
             <Row>
                 <Col className="text-center">
                     <h3>DeviantArt Gallery</h3>
                     <Gallery gallery_owner="hexagonal192" />
-                    <sub>Images loaded from DeviantArt RRS API and oEmbed API. <br />This may take a second</sub>
+                    <sub>Images loaded from DeviantArt RRS API and oEmbed API. <br />This may take a second and for some reason thumbnauls are low quality.</sub>
                 </Col>
             </Row>
         </Container >

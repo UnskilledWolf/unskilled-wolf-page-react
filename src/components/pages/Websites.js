@@ -13,7 +13,7 @@ export default function Websites()
             <Row>
                 <Col>
                     <p>
-                        I create websites. I currently use ReactJS to create them, but used to make them only regular HTML, CSS, and JS. I also working on learning how to make NodeJS servers.<br />
+                        I create websites. I use ReactJS for the front end and NodeJS + Express for the backend. I also have used Vue and Angular before, but I don't know as much about them. I'm currently teaching myself about Authentification and Security.<br />
                         I obviously created this website myself.
                     </p>
                 </Col>

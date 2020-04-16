@@ -46,11 +46,11 @@ export default class About extends React.Component
                 <Row className="mb-5">
                     <Col>
                         <p>
-                            Hello, I am a person on the internet. I call myself Unskilled Wolf, because of my skill at video games.<br />
+                            Hello, I am a person on the internet. I call myself Unskilled Wolf. That name came from my skill at video games.<br />
                             I like to write code, make websites, and I also create art.
                     </p>
                         <p>
-                            I started learning programming at a relatively young age. I have learned a few languages so far. For example, C# (including Unity C#), C++, Python, JS, Processing 3, Bash, ReactJS, and PHP.<br />
+                            I started learning programming at a relatively young age. I have learned a few languages so far starting with C++ for a short time and then moving to C#. Some time later, from there I went to learning Python, JS, Processing 3, Bash, ReactJS, and more.<br />
                             Everything that I know, I have thought myself. Also, Linux is my favorite OS.
                     </p>
                         <p>
