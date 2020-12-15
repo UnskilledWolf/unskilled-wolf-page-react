@@ -11,10 +11,13 @@ export default function Art()
     return (
         <Container>
             <Title>Art</Title>
-            <Row className="text-center">
+            <Row>
                 <Col>
                     <h5>You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a></h5>
                     <p>I mainly draw furry characters, but I also create some vector and pixel art, and I am slowly starting to draw terrain and animations.</p>
+                </Col>
+                <Col className="justify-content-center text-center">
+                    <div className="gradiant-fade" style={{ MaskImage: `url(${require('../../assets/art.svg')})`, webkitMaskImage: `url(${require('../../assets/art.svg')})` }} />
                 </Col>
             </Row>
             <Row>

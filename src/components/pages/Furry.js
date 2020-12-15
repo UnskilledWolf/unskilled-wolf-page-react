@@ -21,7 +21,7 @@ export default function Characters()
                 <Title>Characters</Title>
                 <Row>
                     <Col>
-                        <p>I enjoy creating characters (or OCs), these are summaries of my main ones.</p>
+                        <p>I enjoy creating characters, these are summaries of my main ones.</p>
                     </Col>
                 </Row>
                 <Character name="Axiom" image="https://via.placeholder.com/300x450" notes={

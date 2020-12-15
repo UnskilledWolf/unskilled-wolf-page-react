@@ -13,7 +13,7 @@ export default function Websites()
             <Row>
                 <Col>
                     <p>
-                        I create websites. I use ReactJS for the front end and NodeJS + Express for the backend. I also have used Vue and Angular before, but I don't know as much about them. I'm currently teaching myself about Authentification and Security.<br />
+                        I create websites. I use ReactJS for the front end and NodeJS + Express for the backend. I also have used Vue and Angular before, but I don't know as much about them.<br />
                         I obviously created this website myself.
                     </p>
                 </Col>
