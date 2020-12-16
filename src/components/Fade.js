@@ -41,7 +41,7 @@ export default class Fade extends Component
     render()
     {
         return (
-            <div ref={this.mainRef} className="fade-in">
+            <div ref={this.mainRef} >
                 {this.props.children}
             </div>
         )

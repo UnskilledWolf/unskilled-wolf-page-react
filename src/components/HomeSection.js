@@ -25,16 +25,17 @@ export default class HomeSection extends React.Component
         return (
             <Fade onReveal={this.activetAnimation}>
                 <Link to={this.props.href} style={{ textDecoration: 'none' }}>
-                    <Row className="homeSection rounded mb-3">
-                        <div className="homeGradient" />
-                        <Col>
-                            <h4>{this.props.title}</h4>
-                            <p>{this.props.children}</p>
-                        </Col>
-                        <Col className={`justify-content-center text-center fade-image ${this.state.animateImage}`}>
-                            <Image rounded src={this.props.image} className="sectionImage" />
-                        </Col>
-                    </Row>
+                    <Col className="homeSection rounded mb-3">
+                        <Row>
+                            <Col>
+                                <h4>{this.props.title}</h4>
+                                <p>{this.props.children}</p>
+                            </Col>
+                            <Col className={`justify-content-center text-center fade-image ${this.state.animateImage}`}>
+                                <Image rounded src={this.props.image} className="sectionImage" />
+                            </Col>
+                        </Row>
+                    </Col>
                 </Link>
             </Fade>
         )

@@ -12,7 +12,7 @@ export default function Games()
             <Title>Games</Title>
             <Row>
                 <Col>
-                    <p>I used to create games, but most of them are old and do not reflect my current skill and knowledge. I want to work on something in the futuire, but my most current work comes from my websites.</p>
+                    <p>I used to create games, but most of them are old and do not reflect my current skill and knowledge. I want to work on something in the future, but my most current work comes from my websites.</p>
                     <p>To create games, I used Unity3D, but I have now switched to Godot. I also made some small things in Processing and P5.</p>
                     <p>I also have some <b>OLD</b> games on <a href="https://ldjam.com/users/gerox">Ludum Dare</a> (As I said, Old and Simple Games)</p>
                 </Col>
