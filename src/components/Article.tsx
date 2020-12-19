@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Article extends Component<{ image: string }, {}>
+export default class Article extends Component<{ image: string, title: string }, {}>
 {
     render()
     {
@@ -10,6 +10,7 @@ export default class Article extends Component<{ image: string }, {}>
                     <img alt="" src={this.props.image} />
                 </div>
                 <p>
+                    <h2>{this.props.title}</h2>
                     {this.props.children}
                 </p>
             </div>
