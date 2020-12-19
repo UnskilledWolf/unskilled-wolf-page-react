@@ -35,7 +35,7 @@ class Title extends React.Component
                                     </Tween>
                                     <div className="title-text">
                                         <h1>Unskilled Wolf</h1>
-                                        <small>aka Hexagonal193</small>
+                                        <small>aka Hexagonal192</small>
                                     </div>
                                     <Timeline target={
                                         <div className="title-extra">
