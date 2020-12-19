@@ -30,6 +30,50 @@ body {
   }
 }
 
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+//|| Title
+.title-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5rem);
+
+  .title,
+  .title-deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .title-deco {
+    z-index: 2;
+    background-color: $dark-bg;
+
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+  .title {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $blue;
+
+    .title-text {
+      position: relative;
+      top: 30%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+
+      text-align: center;
+    }
+  }
+}
+
+//|| Footer
 footer {
   text-align: center;
   margin-top: 5rem;
@@ -54,49 +98,6 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-
-.remove-link-style,
-.nav-link {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.gradiant-fade {
-  height: 450px;
-  width: 450px;
-  background: #00a3b9;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 163, 185, 1) 0%,
-    rgba(0, 163, 185, 1) 25%,
-    rgba(223, 252, 255, 1) 50%,
-    rgba(223, 252, 255, 1) 60%,
-    rgba(223, 252, 255, 0) 100%
-  );
-  background-size: 400% 400%;
-
-  mask-position: center;
-  mask-repeat: no-repeat;
-
-  animation-name: gradiantFadeAni;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-  @keyframes gradiantFadeAni {
-    from {
-      opacity: 0;
-      background-position: 50% 100%;
-    }
-    20% {
-      opacity: 1;
-    }
-    to {
-      opacity: 1;
-      background-position: 50% 0%;
-    }
   }
 }
 
@@ -157,4 +158,47 @@ footer {
 //|| Small Classes
 .spacer {
   margin-bottom: 3rem;
+}
+
+.remove-link-style,
+.nav-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.gradiant-fade {
+  height: 450px;
+  width: 450px;
+  background: #00a3b9;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 163, 185, 1) 0%,
+    rgba(0, 163, 185, 1) 25%,
+    rgba(223, 252, 255, 1) 50%,
+    rgba(223, 252, 255, 1) 60%,
+    rgba(223, 252, 255, 0) 100%
+  );
+  background-size: 400% 400%;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  animation-name: gradiantFadeAni;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+  @keyframes gradiantFadeAni {
+    from {
+      opacity: 0;
+      background-position: 50% 100%;
+    }
+    20% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+      background-position: 50% 0%;
+    }
+  }
 }

@@ -32,7 +32,7 @@ export default class NavBar extends Component
     render()
     {
         return (
-            <div className="nav-bar" ref={this.navRef}>
+            <div className="nav-bar" ref={this.navRef} id="nav">
                 <nav>
                     <a className="nav-link" href="#home">Home</a>
                     <a className="nav-link" href="#games">Games</a>
