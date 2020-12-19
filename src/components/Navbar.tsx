@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class NavBar extends Component
 {
-    navRef = React.createRef()
+    private navRef = React.createRef<HTMLDivElement>()
 
     componentDidMount()
     {
@@ -14,17 +14,19 @@ export default class NavBar extends Component
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-    handleScroll = (e) =>
+    handleScroll = (e: Event) =>
     {
-        // console.log(this.navRef.current.offsetTop - document.body.scrollTop)
-        if (this.navRef.current.offsetTop - document.body.scrollTop > 75)
+        if (this.navRef.current)
         {
-            this.navRef.current.classList.add("forst-bg")
-        }
-        else
-        {
-            this.navRef.current.classList.remove("forst-bg")
-        }
+            if (this.navRef.current.offsetTop - document.body.scrollTop > 75)
+            {
+                this.navRef.current.classList.add("forst-bg")
+            }
+            else
+            {
+                this.navRef.current.classList.remove("forst-bg")
+            }
+        } else { console.warn("No Navbar Ref is registered.") }
     }
 
     render()
