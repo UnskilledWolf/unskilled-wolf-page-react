@@ -39,7 +39,8 @@ h1 {
 .title-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: 100vh;
+  // height: calc(100vh - 5rem);
 
   .title,
   .title-deco {
@@ -63,12 +64,24 @@ h1 {
     background-color: $blue;
 
     .title-text {
-      position: relative;
-      top: 30%;
+      position: absolute;
+      top: 40%;
       left: 25%;
       transform: translate(-50%, -50%);
 
       text-align: center;
+    }
+
+    .title-extra {
+      z-index: 3;
+      position: absolute;
+      top: 50%;
+      left: 65%;
+
+      font-size: 2rem;
+      // ul {
+      //   list-style: none;
+      // }
     }
   }
 }
@@ -152,6 +165,27 @@ footer {
     background-color: $blue;
     opacity: 0.2;
     content: "";
+  }
+}
+
+//|| Scroll Hint
+.scroll-hint {
+  z-index: 4;
+  position: absolute;
+
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .icon {
+    display: inline-block;
+    text-align: center;
+    width: 1.5rem;
   }
 }
 
