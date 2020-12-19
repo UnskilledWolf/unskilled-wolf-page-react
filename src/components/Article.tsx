@@ -9,10 +9,10 @@ export default class Article extends Component<{ image: string, title: string, i
                 <div className="article-img">
                     <img alt="" src={this.props.image} />
                 </div>
-                <p>
+                <div>
                     <h2>{this.props.title}</h2>
-                    {this.props.children}
-                </p>
+                    <p>{this.props.children}</p>
+                </div>
             </div>
         )
     }
