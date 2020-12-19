@@ -30,7 +30,7 @@ export default class NavBar extends Component
     render()
     {
         return (
-            <div bg="custom" variant="dark" expand="lg" ref={this.navRef}>
+            <div className="nav-bar" ref={this.navRef}>
                 <nav>
                     <a className="nav-link" href="#home">Home</a>
                     <a className="nav-link" href="#games">Games</a>

@@ -8,7 +8,7 @@ function App()
     <div className="App">
       <NavBar />
 
-      <div className="mb-3" />
+      <div className="spacer" />
 
       <footer>
         <p className="footer-text">© Unskilled Wolf</p>
