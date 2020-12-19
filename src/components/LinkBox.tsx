@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react'
 interface Props
 {
     link: string,
-    title: string,
+    title: JSX.Element,
     at: string,
     color: string
     tcolor: string

@@ -93,9 +93,18 @@ h1 {
       left: 65%;
 
       font-size: 2rem;
-      // ul {
-      //   list-style: none;
-      // }
+
+      ul {
+        list-style: none;
+
+        li {
+          border-bottom: 1px solid $text;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
     }
   }
 }
@@ -277,7 +286,7 @@ footer {
       }
 
       .title {
-        font-size: 1.3rem;
+        font-size: 2rem;
         margin: 0;
         padding: 0;
 
@@ -351,4 +360,13 @@ footer {
 .seperator {
   margin: 0 2rem 3rem 2rem;
   border-top: 3px solid $blue;
+}
+
+.disclaimer {
+  background-color: #0d0d0d;
+
+  padding: 2rem 3rem;
+  margin: 0 2rem 3rem 2rem;
+
+  font-size: 1.2rem;
 }

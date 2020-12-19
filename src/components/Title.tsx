@@ -27,7 +27,7 @@ class Title extends React.Component
                                             <div className="scroll-hint">
                                                 <p>
                                                     Scroll Down <br />
-                                                    <img className="icon" src={require("../assets/scroll-icon.svg")} />
+                                                    <img className="icon" alt="" src={require("../assets/scroll-icon.svg")} />
                                                 </p>
                                             </div>
                                             <Particles className="particle-footer" params={PARTICLE_PARAMS} />
@@ -41,8 +41,8 @@ class Title extends React.Component
                                         <div className="title-extra">
                                             <ul>
                                                 <li>Art</li>
+                                                <li>Websites</li>
                                                 <li>Code</li>
-                                                <li>Games</li>
                                             </ul>
                                         </div>}>
                                         <Tween

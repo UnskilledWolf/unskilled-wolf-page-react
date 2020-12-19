@@ -18,6 +18,10 @@ function App()
 
         <div className="spacer" />
 
+        <div className="disclaimer">
+          <p>Obviously, don't use my code, art, or characters without my permission</p>
+        </div>
+
         {/* TODO Animate Articles */}
 
         <Article image={require("./assets/art.svg")} title="Art" id="art">
@@ -30,7 +34,7 @@ function App()
                         I obviously created this website myself.
       </Article>
 
-        <Article image={require("./assets/games.svg")} title="Games" id="games">
+        <Article image={require("./assets/games.svg")} title="Code" id="code">
           I used to create games, but most of them are old and do not reflect my current skill and knowledge. I want to work on something in the future, but my most current work comes from my websites.<br />
         To create games, I used Unity3D, but I have now switched to Godot. I also made some small things in Processing and P5.<br />
         I also have some <b>OLD</b> games on <a href="https://ldjam.com/users/gerox">Ludum Dare</a> (As I said, Old and Simple Games)
