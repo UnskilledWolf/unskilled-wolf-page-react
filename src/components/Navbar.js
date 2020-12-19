@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
 
 export default class NavBar extends Component
 {
@@ -33,21 +30,15 @@ export default class NavBar extends Component
     render()
     {
         return (
-            <Navbar bg="custom" variant="dark" expand="lg" ref={this.navRef}>
-                <Navbar.Brand className="mr-3"><NavLink to="/" className="navbar-brand mr-0">Unskilled Wolf</NavLink></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className=""></Nav>
-                    <Nav>
-                        <NavLink exact className="nav-link" to="/">Home</NavLink>
-                        <NavLink className="nav-link" to="/games">Games</NavLink>
-                        <NavLink className="nav-link" to="/websites">Websites</NavLink>
-                        <NavLink className="nav-link" to="/art">Art</NavLink>
-                        {/* <NavLink className="nav-link" to="/furry">Furry</NavLink> */}
-                        <NavLink className="nav-link" to="/about">About</NavLink>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <div bg="custom" variant="dark" expand="lg" ref={this.navRef}>
+                <nav>
+                    <a className="nav-link" href="#home">Home</a>
+                    <a className="nav-link" href="#games">Games</a>
+                    <a className="nav-link" href="#websites">Websites</a>
+                    <a className="nav-link" href="#art">Art</a>
+                    <a className="nav-link" href="#about">About</a>
+                </nav>
+            </div>
         )
     }
 }

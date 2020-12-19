@@ -1,21 +1,6 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 import Particles from 'react-particles-js';
-
-//*Pages
-import About from './components/pages/About';
-import Home from './components/pages/Home';
-import Games from './components/pages/Games';
-import Websites from './components/pages/Websites';
-import Art from './components/pages/Art';
-// import Furry from './components/pages/Furry';
-
-//*Bootstrap Imports
 import NavBar from './components/Navbar'
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 
 function App()
 {
@@ -25,25 +10,9 @@ function App()
 
       <div className="mb-3" />
 
-      <Switch>
-        <Route exact path="/"><Home key="Home" /></Route>
-        <Route path="/about"><About key="About" /></Route>
-        <Route path="/games"><Games key="Games" /></Route>
-        <Route path="/websites"><Websites key="Websites" /></Route>
-        <Route path="/art"><Art key="Art" /></Route>
-        {/* <Route path="/furry"><Furry key="Furry"/></Route> */}
-      </Switch>
-
-      <footer className="text-center mt-5">
+      <footer>
         <p className="footer-text">© Unskilled Wolf</p>
         <Particles className="particle-footer" params={PARTICLE_PARAMS} />
-        {/* <Container fluid className="mt-1">
-          <Row>
-            <Col>
-              <p>© Unskilled Wolf</p>
-            </Col>
-          </Row>
-        </Container> */}
       </footer>
     </div>
   );
