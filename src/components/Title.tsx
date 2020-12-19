@@ -4,18 +4,8 @@ import Particles from 'react-particles-js';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Timeline, Tween } from 'react-gsap';
 
-export interface TitleProps
+class Title extends React.Component
 {
-
-}
-
-export interface TitleState
-{
-
-}
-
-class Title extends React.Component<TitleProps, TitleState> {
-
     render()
     {
         return (
