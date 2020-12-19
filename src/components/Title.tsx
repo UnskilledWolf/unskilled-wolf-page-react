@@ -16,7 +16,7 @@ class Title extends React.Component
                     pin
                 >
                     {(progress: any) => (
-                        <div className="title-container">
+                        <div className="title-container" id="home">
                             <Timeline totalProgress={progress} paused>
                                 <div className="title" style={{ backgroundImage: `url(${require("../assets/index_cover_paralax.png")})` }}>
                                     <Tween
