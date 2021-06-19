@@ -1,0 +1,72 @@
+$easing: cubic-bezier(0.64, 0, 0.78, 0);
+
+#logo {
+    & #a > g {
+        & > * {
+            opacity: 0;
+            transform-origin: center;
+        }
+        & > *:nth-child(2) {
+            animation: animate-in 0.3s $easing 0.1s 1 normal forwards;
+        }
+        & > *:nth-child(4) {
+            animation: animate-in 0.3s $easing 0.2s 1 normal forwards;
+        }
+        & > *:nth-child(5) {
+            animation: animate-in 0.3s $easing 0.3s 1 normal forwards;
+        }
+        & > *:nth-child(1) {
+            animation: animate-in 0.3s $easing 0.4s 1 normal forwards;
+        }
+        & > *:nth-child(3) {
+            animation: animate-in 0.3s $easing 0.5s 1 normal forwards;
+        }
+    }
+
+    .c {
+        fill: #464646;
+        // animation: color 1s $easing 0.6s 1 normal forwards;
+        animation: color-fade 2s ease-out 0.8s 1 normal forwards;
+    }
+}
+
+@keyframes animate-in {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(1.5);
+    }
+
+    40% {
+        filter: blur(0px);
+    }
+
+    90% {
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes color {
+    from {
+        fill: #464646;
+    }
+
+    to {
+        fill: #01a3ba;
+    }
+}
+
+@keyframes color-fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

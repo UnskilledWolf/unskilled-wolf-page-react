@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: Roboto, Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Fira Sans", sans-serif;
 
   background-color: $dark-bg;
   color: $text;
@@ -45,8 +45,15 @@ body {
 }
 
 h1 {
-  font-size: 5vw;
-  margin-bottom: 0.5rem;
+  font-size: 4vw;
+  font-weight: 600;
+  margin: 0.1rem 0;
+}
+
+h2 {
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  margin: 0;
 }
 
 a {
@@ -58,7 +65,6 @@ a {
   position: relative;
   width: 100%;
   height: 100vh;
-  // height: calc(100vh - 5rem);
 
   .title,
   .title-deco {
@@ -68,41 +74,63 @@ a {
     width: 100%;
     height: 100%;
   }
+
   .title-deco {
     z-index: 2;
     background-color: $dark-bg;
 
-    clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  }
-  .title {
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $blue;
+    clip-path: polygon(75% 0, 200% 0, 200% 100%, 25% 100%);
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $dark-bg;
+
+      top: 0;
+      right: -100%;
+
+      height: 100vh;
+      width: 100vw;
+    }
 
     .title-text {
       position: absolute;
-      top: 40%;
-      left: 25%;
-      transform: translate(-50%, -50%);
+      top: 18%;
+      right: 25%;
+      transform: translate(50%, 0%);
 
       text-align: center;
+
+      #logo {
+        transform: translate(0, 12%);
+        height: 24rem;
+        position: relative;
+        opacity: 1 !important;
+      }
     }
+  }
+
+  .title {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -130px center;
+    background-color: $blue;
 
     .title-extra {
       z-index: 3;
       position: absolute;
-      top: 50%;
-      left: 65%;
+      left: 55%;
 
-      font-size: 2rem;
+      transform: translate(-50%, -50%);
+
+      font-size: 5rem;
 
       ul {
         list-style: none;
 
         li {
-          border-bottom: 1px solid $text;
+          border-bottom: 5px solid $text;
 
           &:last-child {
             border: none;
