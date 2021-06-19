@@ -18,21 +18,22 @@ function App()
 
         <div className="spacer" />
 
-        <Article image={require("./assets/anouncement.svg")} title="Announcement" id="announcement">
-          <p><b>Example Announcement</b></p>
+        <Article image={require("./assets/announcement.svg")} title="Announcement" id="announcement">
+          <p>Example Announcement</p>
         </Article>
 
         <Article image={require("./assets/disclaimer.svg")} title="Please Note" id="disclaimer">
-          <p><b>Don't use my code, art, or characters without my permission!</b></p>
+          <p><b>Important announcement!</b></p>
         </Article>
 
         <Article image={require("./assets/art.svg")} title="Art" id="art">
-          <b>You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a></b><br />
-          I am a relative beginner digital artist, who mainly draws furry characters. While I often draw digitally, I also sometimes draw traditionally. I make Vector Art, Pixel Art, and 3D art. Currently, my main focus is to improve at drawing terrain and expressions. I also plan to animate in the future.
+          I am a gradually improving digital artist, who specializes in furry artworks. While I typically draw digitally, I also draw traditionally sometimes. I can also make Vector Art, and 3D art. Currently, my main focus is to improve at expressions. I also plan to animate in the future.<br />
+          <a href="http://www.example.com" className="button-link">Art Gallery</a><br />
+          You can alternatively see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a>
         </Article>
 
         <Article image={require("./assets/sites.svg")} title="Websites" id="websites">
-          I create websites. I commonly use ReactJS for the front end and NodeJS + Express for the backend. I have used Vue and Angular before, but I don't know as much about them. I also know how to use some SQL and No-SQL databases.<br />
+          I create websites, and I have experience in full-stack development. I usually use ReactJS for the front end and NodeJS + Express for the backend. I also know how to use some SQL and No-SQL databases.<br />
           I build this website using ReactJS by myself.
         </Article>
 

@@ -412,6 +412,23 @@ footer {
   background-color: #0f170f;
 }
 
+.button-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: $blue;
+  color: $text;
+  padding: 0.5rem 0.3rem;
+  border-radius: 2px;
+  margin: 0.3rem 0;
+
+  transition: 0.3s $easing;
+
+  &:hover {
+    background-color: lighten($blue, 10%);
+    transform: scale(1.01);
+  }
+}
+
 //|| Moble
 @media only screen and (max-width: 800px) {
   $articleBorder: 3rem;
