@@ -412,7 +412,42 @@ footer {
 }
 
 //|| Moble
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
+  .title {
+    background-position: -330px center !important;
+
+    & canvas {
+      display: none;
+    }
+  }
+
+  .title-text {
+    top: auto !important;
+    bottom: 20%;
+    right: 27% !important;
+
+    #logo {
+      height: 10rem !important;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .title-extra {
+    left: 50% !important;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 3rem !important;
+  }
+
   .article {
     flex-wrap: wrap;
     flex-basis: 100%;
@@ -429,6 +464,25 @@ footer {
 
     .links > .collection {
       justify-content: space-around;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.title {
+    .title-deco {
+      clip-path: none !important;
+
+      .title-text {
+        bottom: 50%;
+        right: 50% !important;
+        transform: translate(50%, 30%);
+        opacity: 1 !important;
+
+        #logo {
+          right: 0 !important;
+        }
+      }
     }
   }
 }
