@@ -2,6 +2,7 @@ $dark-bg: #181818;
 $blue: #00a3b9;
 $text: #dffcff;
 $easing: cubic-bezier(0.16, 1, 0.3, 1);
+$articleBorder: 10rem;
 
 html {
   height: 100%;
@@ -258,7 +259,8 @@ footer {
   align-content: stretch;
 
   padding: 2rem 3rem;
-  margin: 0 2rem 3rem 2rem;
+  margin: 0 $articleBorder 3rem $articleBorder;
+  border-radius: 2px;
 
   .article-img {
     height: 12rem;
@@ -288,7 +290,7 @@ footer {
   flex-wrap: wrap;
 
   padding: 2rem 3rem;
-  margin: 0 2rem 1rem 2rem;
+  margin: 0 $articleBorder 1rem $articleBorder;
 
   .about,
   .links {
@@ -402,17 +404,24 @@ footer {
   border-top: 3px solid $blue;
 }
 
-.disclaimer {
-  background-color: #0d0d0d;
+#disclaimer {
+  background-color: #250c0c;
+}
 
-  padding: 2rem 3rem;
-  margin: 0 2rem 3rem 2rem;
-
-  font-size: 1.2rem;
+#announcement {
+  background-color: #0f170f;
 }
 
 //|| Moble
 @media only screen and (max-width: 800px) {
+  $articleBorder: 3rem;
+
+  .disclaimer,
+  .bottom,
+  .article {
+    margin: 0 $articleBorder 1rem $articleBorder;
+  }
+
   .title {
     background-position: -330px center !important;
 

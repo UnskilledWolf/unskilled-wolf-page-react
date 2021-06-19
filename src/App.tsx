@@ -18,9 +18,13 @@ function App()
 
         <div className="spacer" />
 
-        <div className="disclaimer">
-          <p>Obviously, don't use my code, art, or characters without my permission</p>
-        </div>
+        <Article image={require("./assets/anouncement.svg")} title="Announcement" id="announcement">
+          <p><b>Example Announcement</b></p>
+        </Article>
+
+        <Article image={require("./assets/disclaimer.svg")} title="Please Note" id="disclaimer">
+          <p><b>Don't use my code, art, or characters without my permission!</b></p>
+        </Article>
 
         <Article image={require("./assets/art.svg")} title="Art" id="art">
           <b>You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a></b><br />
