@@ -19,17 +19,17 @@ function App()
         <div className="spacer" />
 
         <Article image={require("./assets/announcement.svg")} title="Announcement" id="announcement">
-          <p>Example Announcement</p>
+          <p>Note: This is still Work In Progress</p>
         </Article>
 
-        <Article image={require("./assets/disclaimer.svg")} title="Please Note" id="disclaimer">
+        {/* <Article image={require("./assets/disclaimer.svg")} title="Please Note" id="disclaimer">
           <p><b>Important announcement!</b></p>
-        </Article>
+        </Article> */}
 
         <Article image={require("./assets/art.svg")} title="Art" id="art">
           I am a gradually improving digital artist, who specializes in furry artworks. While I typically draw digitally, I also draw traditionally sometimes. I can also make Vector Art, and 3D art. Currently, my main focus is to improve at expressions. I also plan to animate in the future.<br />
-          <a href="http://www.example.com" className="button-link">Art Gallery</a><br />
-          You can alternatively see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a>
+          {/* <a href="http://www.example.com" className="button-link">Art Gallery</a><br /> */}
+          You can see my art on my <a href="https://deviantart.com/hexagonal192">DeviantArt</a>
         </Article>
 
         <Article image={require("./assets/sites.svg")} title="Websites" id="websites">
