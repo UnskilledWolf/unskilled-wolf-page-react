@@ -11,9 +11,9 @@ type Journal {
 
 type Image {
     tags: [String!],
-    url: String!,
-    thumbnailUrl:String!,
+    file: String!,
     date: Time!,
     title: String!,
-    type: String!
+    type: String!,
+    old: Boolean
 }

@@ -1,15 +1,18 @@
 export interface IImage
 {
-    tags: string[],
-    imageName: string,
-    date: Date,
     title: string,
-    type: string
+    type: string,
+    old: boolean,
+    tags: [string],
+    file: string,
+    date: Date,
+    id: string
 }
 
 export interface IImageThumb
 {
+    title: string,
+    file: string,
     date: Date,
-    thumbnailUrl: string,
-    title: string
+    id: string
 }
