@@ -1,100 +1,89 @@
-<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 388.84 312.93">
-  <defs>
-    <style>
-      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7 {
-        stroke: #00a3b9;
-      }
-
-      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1 {
-        stroke-width: 5px;
-      }
-
-      .cls-2 {
-        fill: #181818;
-      }
-
-      .cls-2, .cls-6, .cls-7 {
-        stroke-linecap: round;
-        stroke-width: 3px;
-      }
-
-      .cls-3 {
-        fill: #00a3b9;
-      }
-
-      .cls-4 {
-        stroke-width: 0.75px;
-      }
-
-      .cls-7 {
-        stroke-linejoin: round;
-      }
-    </style>
-  </defs>
-  <title>sites</title>
-  <rect class="cls-1" x="65.46" y="118.81" width="274.88" height="191.63" rx="15.93"/>
-  <g id="Code">
-    <line class="cls-2" x1="75.83" y1="164.05" x2="193.51" y2="164.05"/>
-    <line class="cls-2" x1="88.1" y1="174.65" x2="219.37" y2="174.65"/>
-    <line class="cls-2" x1="88.1" y1="185.25" x2="205.14" y2="185.25"/>
-    <line class="cls-2" x1="88.1" y1="195.85" x2="217.57" y2="195.85"/>
-    <line class="cls-2" x1="75.83" y1="206.44" x2="191.1" y2="206.44"/>
-    <line class="cls-2" x1="75.83" y1="217.04" x2="224.19" y2="217.04"/>
-    <line class="cls-2" x1="88.1" y1="227.64" x2="219.37" y2="227.64"/>
-    <line class="cls-2" x1="88.1" y1="238.23" x2="217.57" y2="238.23"/>
-    <line class="cls-2" x1="75.83" y1="248.83" x2="202.5" y2="248.83"/>
-    <line class="cls-2" x1="88.1" y1="259.43" x2="215.21" y2="259.43"/>
-    <line class="cls-2" x1="75.83" y1="270.03" x2="210.83" y2="270.03"/>
-  </g>
-  <rect class="cls-3" x="239.73" y="164.05" width="87.3" height="105.97" rx="9.42"/>
-  <rect class="cls-3" x="65.52" y="127.51" width="274.81" height="13.71"/>
-  <rect class="cls-4" x="253.27" y="5.32" width="135.19" height="94.24" rx="15.93"/>
-  <g id="Code-2" data-name="Code">
-    <line class="cls-2" x1="258.38" y1="27.58" x2="316.26" y2="27.58"/>
-    <line class="cls-2" x1="264.41" y1="32.79" x2="328.97" y2="32.79"/>
-    <line class="cls-2" x1="264.41" y1="38" x2="321.98" y2="38"/>
-    <line class="cls-2" x1="264.41" y1="43.21" x2="328.09" y2="43.21"/>
-    <line class="cls-2" x1="258.38" y1="48.42" x2="315.07" y2="48.42"/>
-    <line class="cls-2" x1="258.38" y1="53.64" x2="331.34" y2="53.64"/>
-    <line class="cls-2" x1="264.41" y1="58.85" x2="328.97" y2="58.85"/>
-    <line class="cls-2" x1="264.41" y1="64.06" x2="328.09" y2="64.06"/>
-    <line class="cls-2" x1="258.38" y1="69.27" x2="320.67" y2="69.27"/>
-    <line class="cls-2" x1="264.41" y1="74.48" x2="326.93" y2="74.48"/>
-    <line class="cls-2" x1="258.38" y1="79.69" x2="324.77" y2="79.69"/>
-  </g>
-  <rect class="cls-5" x="338.99" y="27.58" width="42.93" height="52.12" rx="9.42"/>
-  <polyline class="cls-6" points="23.69 1.5 2.56 16.75 23.69 32"/>
-  <polyline class="cls-6" points="41.27 1.5 62.4 16.75 41.27 32"/>
-  <polyline class="cls-6" points="23.69 73.23 2.56 88.49 23.69 103.74"/>
-  <polyline class="cls-6" points="41.27 73.23 62.4 88.49 41.27 103.74"/>
-  <line class="cls-6" x1="23.69" y1="96.87" x2="41.27" y2="80.47"/>
-  <g id="Code-3" data-name="Code">
-    <line class="cls-2" x1="49.4" y1="39.1" x2="123.51" y2="39.1"/>
-    <line class="cls-2" x1="57.12" y1="45.77" x2="139.79" y2="45.77"/>
-    <line class="cls-2" x1="57.12" y1="52.44" x2="130.83" y2="52.44"/>
-    <line class="cls-2" x1="57.12" y1="59.12" x2="138.66" y2="59.12"/>
-    <line class="cls-2" x1="49.4" y1="65.79" x2="121.99" y2="65.79"/>
-    <path class="cls-2" d="M71.71,127.31" transform="translate(-22.31 -54.84)"/>
-    <path class="cls-2" d="M79.44,134" transform="translate(-22.31 -54.84)"/>
-    <path class="cls-2" d="M79.44,140.66" transform="translate(-22.31 -54.84)"/>
-    <path class="cls-2" d="M71.71,147.33" transform="translate(-22.31 -54.84)"/>
-    <path class="cls-2" d="M79.44,154" transform="translate(-22.31 -54.84)"/>
-    <path class="cls-2" d="M71.71,160.68" transform="translate(-22.31 -54.84)"/>
-  </g>
-  <line class="cls-5" x1="338.99" y1="24" x2="338.99" y2="8.3"/>
-  <line class="cls-5" x1="336.26" y1="24" x2="341.4" y2="24"/>
-  <line class="cls-5" x1="336.26" y1="8.3" x2="341.4" y2="8.3"/>
-  <polyline class="cls-5" points="331.34 86.24 331.34 87.62 331.34 89.01"/>
-  <line class="cls-5" x1="338.83" y1="87.62" x2="331.34" y2="87.62"/>
-  <line class="cls-5" x1="338.83" y1="86.24" x2="338.83" y2="89.01"/>
-  <polyline class="cls-7" points="151.66 53.63 162.32 53.63 169.74 61.05 169.74 107.24"/>
-  <polyline class="cls-7" points="239.73 52.44 224.19 52.44 216.5 60.14 216.5 107.24"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450 450" style="enable-background:new 0 0 450 450;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#181818;}
+	.st1{fill:none;stroke:#00A3B9;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:#181818;stroke:#00A3B9;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:#00A3B9;}
+	.st4{fill:none;stroke:#00A3B9;stroke-width:0.75;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#00A3B9;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#00A3B9;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#00A3B9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<rect id="BG" x="0.3" y="0.3" class="st0" width="449.7" height="449.7"/>
+<path class="st1" d="M103.7,173.6h243c8.8,0,15.9,7.1,15.9,15.9v159.8c0,8.8-7.1,15.9-15.9,15.9h-243c-8.8,0-15.9-7.1-15.9-15.9
+	V189.6C87.8,180.8,94.9,173.6,103.7,173.6z"/>
+<g id="Code">
+	<line class="st2" x1="98.1" y1="218.9" x2="215.8" y2="218.9"/>
+	<line class="st2" x1="110.4" y1="229.5" x2="241.7" y2="229.5"/>
+	<line class="st2" x1="110.4" y1="240.1" x2="227.5" y2="240.1"/>
+	<line class="st2" x1="110.4" y1="250.7" x2="239.9" y2="250.7"/>
+	<line class="st2" x1="98.1" y1="261.3" x2="213.4" y2="261.3"/>
+	<line class="st2" x1="98.1" y1="271.9" x2="246.5" y2="271.9"/>
+	<line class="st2" x1="110.4" y1="282.5" x2="241.7" y2="282.5"/>
+	<line class="st2" x1="110.4" y1="293.1" x2="239.9" y2="293.1"/>
+	<line class="st2" x1="98.1" y1="303.7" x2="224.8" y2="303.7"/>
+	<line class="st2" x1="110.4" y1="314.3" x2="237.5" y2="314.3"/>
+	<line class="st2" x1="98.1" y1="324.9" x2="233.1" y2="324.9"/>
+</g>
+<path class="st3" d="M339.9,324.9h-68.5c-5.2,0-9.4-4.2-9.4-9.4v-87.1c0-5.2,4.2-9.4,9.4-9.4h68.5c5.2,0,9.4,4.2,9.4,9.4v87.1
+	C349.3,320.7,345.1,324.9,339.9,324.9z"/>
+<rect x="87.8" y="182.4" class="st3" width="274.8" height="13.7"/>
+<path class="st4" d="M291.5,60.2h103.3c8.8,0,15.9,7.1,15.9,15.9v62.4c0,8.8-7.1,15.9-15.9,15.9H291.5c-8.8,0-15.9-7.1-15.9-15.9
+	V76.1C275.6,67.3,282.7,60.2,291.5,60.2z"/>
+<g id="Code_2_">
+	<line class="st2" x1="280.7" y1="82.4" x2="338.6" y2="82.4"/>
+	<line class="st2" x1="286.7" y1="87.6" x2="351.3" y2="87.6"/>
+	<line class="st2" x1="286.7" y1="92.8" x2="344.3" y2="92.8"/>
+	<line class="st2" x1="286.7" y1="98.1" x2="350.4" y2="98.1"/>
+	<line class="st2" x1="280.7" y1="103.3" x2="337.4" y2="103.3"/>
+	<line class="st2" x1="280.7" y1="108.5" x2="353.7" y2="108.5"/>
+	<line class="st2" x1="286.7" y1="113.7" x2="351.3" y2="113.7"/>
+	<line class="st2" x1="286.7" y1="118.9" x2="350.4" y2="118.9"/>
+	<line class="st2" x1="280.7" y1="124.1" x2="343" y2="124.1"/>
+	<line class="st2" x1="286.7" y1="129.3" x2="349.2" y2="129.3"/>
+	<line class="st2" x1="280.7" y1="134.5" x2="347.1" y2="134.5"/>
+</g>
+<path class="st5" d="M394.8,134.5h-24.1c-5.2,0-9.4-4.2-9.4-9.4V91.8c0-5.2,4.2-9.4,9.4-9.4h24.1c5.2,0,9.4,4.2,9.4,9.4v33.3
+	C404.2,130.3,400,134.5,394.8,134.5z"/>
+<polyline class="st6" points="46,56.3 24.9,71.6 46,86.8 "/>
+<polyline class="st6" points="63.6,56.3 84.7,71.6 63.6,86.8 "/>
+<polyline class="st6" points="46,128.1 24.9,143.3 46,158.6 "/>
+<polyline class="st6" points="63.6,128.1 84.7,143.3 63.6,158.6 "/>
+<line class="st6" x1="46" y1="151.7" x2="63.6" y2="135.3"/>
+<g id="Code_1_">
+	<line class="st2" x1="71.7" y1="93.9" x2="145.8" y2="93.9"/>
+	<line class="st2" x1="79.4" y1="100.6" x2="162.1" y2="100.6"/>
+	<line class="st2" x1="79.4" y1="107.3" x2="153.1" y2="107.3"/>
+	<line class="st2" x1="79.4" y1="114" x2="161" y2="114"/>
+	<line class="st2" x1="71.7" y1="120.6" x2="144.3" y2="120.6"/>
+	<path class="st2" d="M71.7,127.3"/>
+	<path class="st2" d="M79.4,134"/>
+	<path class="st2" d="M79.4,140.7"/>
+	<path class="st2" d="M71.7,147.3"/>
+	<path class="st2" d="M79.4,154"/>
+	<path class="st2" d="M71.7,160.7"/>
+</g>
+<line class="st5" x1="361.3" y1="78.8" x2="361.3" y2="63.1"/>
+<line class="st5" x1="358.6" y1="78.8" x2="363.7" y2="78.8"/>
+<line class="st5" x1="358.6" y1="63.1" x2="363.7" y2="63.1"/>
+<polyline class="st5" points="353.7,141.1 353.7,142.5 353.7,143.9 "/>
+<line class="st5" x1="361.1" y1="142.5" x2="353.7" y2="142.5"/>
+<line class="st5" x1="361.1" y1="141.1" x2="361.1" y2="143.9"/>
+<polyline class="st7" points="174,108.5 184.6,108.5 192.1,115.9 192.1,162.1 "/>
+<polyline class="st7" points="262,107.3 246.5,107.3 238.8,115 238.8,162.1 "/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>

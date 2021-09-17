@@ -3,7 +3,7 @@ $cyan: #00a3b9;
 $black: #0d0d0d;
 $text: #dffcff;
 $easing: cubic-bezier(0.16, 1, 0.3, 1);
-$articleBorder: 10rem;
+$articleBorder: 15rem;
 
 html {
   height: 100%;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   background-color: $background;
   color: $text;
@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   margin: 0;
 }
@@ -264,13 +264,12 @@ footer {
   border-radius: 2px;
 
   .article-img {
-    height: 12rem;
-    width: 12rem;
+    height: 24rem;
+    width: 24rem;
     min-width: 10rem;
 
-    margin: 0 0.5rem 0 0;
+    margin: 0 3rem 0 0;
     padding: 0.5rem;
-    // border: 1px solid $text;
 
     img {
       position: relative;
@@ -278,6 +277,18 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  //Stagger images
+  &:nth-child(even) {
+    .article-img {
+      order: 5;
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  .content {
+    flex-shrink: 10;
   }
 }
 
