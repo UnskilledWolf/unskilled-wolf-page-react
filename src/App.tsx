@@ -44,7 +44,7 @@ function App()
           I have some <b>OLD</b> games on <a href="https://ldjam.com/users/gerox">Ludum Dare</a> (I have gotten better since then.)
         </Article>
 
-        <div className="seperator" />
+        <div className="separator" />
 
         <div className="bottom">
           <About />

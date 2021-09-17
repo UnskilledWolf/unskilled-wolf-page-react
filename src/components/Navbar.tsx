@@ -5,7 +5,7 @@ export default class NavBar extends Component
     render()
     {
         return (
-            <div className="nav-bar forst-bg">
+            <div className="nav-bar frost-bg">
                 <nav>
                     <a className="nav-link" href="#home">Home</a>
                     <a className="nav-link" href="#art">Art</a>

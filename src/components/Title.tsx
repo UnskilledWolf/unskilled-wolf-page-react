@@ -20,7 +20,7 @@ class Title extends React.Component
                     {(progress: any) => (
                         <div className="title-container" id="home">
                             <Timeline totalProgress={progress} paused>
-                                <div className="title" style={{ backgroundImage: `url(${require("../assets/index_cover_paralax.png")})` }}>
+                                <div className="title" style={{ backgroundImage: `url(${require("../assets/index_cover_parallax.png")})` }}>
                                     <Tween
                                         from={{ left: "0%" }}
                                         to={{ left: "-75%" }}
@@ -50,7 +50,6 @@ class Title extends React.Component
                                                 <li>Art</li>
                                                 <li>Websites</li>
                                                 <li>Code</li>
-                                                <li><small>TODO Graphic Here</small></li>
                                             </ul>
                                         </div>}>
                                         <Tween

@@ -211,7 +211,7 @@ footer {
   }
 }
 
-.forst-bg {
+.frost-bg {
   background: none !important;
   backdrop-filter: blur(3px);
   &::after {
@@ -363,7 +363,7 @@ footer {
   text-decoration: inherit;
 }
 
-.gradiant-fade {
+.gradient-fade {
   height: 450px;
   width: 450px;
   background: #00a3b9;
@@ -380,12 +380,12 @@ footer {
   mask-position: center;
   mask-repeat: no-repeat;
 
-  animation-name: gradiantFadeAni;
+  animation-name: gradientFadeAni;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 
-  @keyframes gradiantFadeAni {
+  @keyframes gradientFadeAni {
     from {
       opacity: 0;
       background-position: 50% 100%;
@@ -400,7 +400,7 @@ footer {
   }
 }
 
-.seperator {
+.separator {
   margin: 0 2rem 3rem 2rem;
   border-top: 3px solid $cyan;
 }
@@ -430,7 +430,7 @@ footer {
   }
 }
 
-//|| Moble
+//|| Mobile
 @media only screen and (max-width: 800px) {
   $articleBorder: 3rem;
 

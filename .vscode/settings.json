@@ -9,5 +9,10 @@
         "todo",
         "javascript"
     ],
-    "cSpell.enabled": true
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "gsap",
+        "Ludum",
+        "scrollmagic"
+    ]
 }
