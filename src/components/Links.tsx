@@ -15,7 +15,7 @@ export default class Links extends Component
                     <LinkBox link="https://github.com/UnskilledWolf" title={<SiGithub />} at="UnskilledWolf" color="#24292E" tcolor="#ffffff" />
                     <LinkBox link="https://twitter.com/Unskilled_Wolf" title={<SiTwitter />} at="@Unskilled_Wolf" color="#1DA1F2" tcolor="#ffffff" />
                     <LinkBox link="https://steamcommunity.com/id/unskilled_wolf" title={<SiSteam />} at="Unskilled Wolf" color="#171A21" tcolor="#ffffff" />
-                    <LinkBox link="https://osu.ppy.sh/users/15434782" title={<p>osu!</p>} at="UnskilledWolf" color="#AC396D" tcolor="#ffffff" />
+                    <LinkBox link="https://osu.ppy.sh/users/15434782" title={<b>osu!</b>} at="UnskilledWolf" color="#AC396D" tcolor="#ffffff" />
                     <LinkBox link="https://www.instagram.com/furryboi.git" title={<SiInstagram />} at="@furryboi.git" color="#CD317D" tcolor="#ffffff" />
                 </div>
             </div>

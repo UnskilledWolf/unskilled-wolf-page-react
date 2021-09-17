@@ -1,0 +1,19 @@
+type Query {
+    allJournals: [Journal!]!,
+    allImages: [Image!]!
+}
+
+type Journal {
+    text: String!,
+    title: String!,
+    date: Time!
+}
+
+type Image {
+    tags: [String!],
+    url: String!,
+    thumbnailUrl:String!,
+    date: Time!,
+    title: String!,
+    type: String!
+}
