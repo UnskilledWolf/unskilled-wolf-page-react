@@ -5,6 +5,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { Timeline, Tween } from 'react-gsap';
 import { ReactComponent as LogoSVG } from '../assets/logo.svg'
 import "../logoAnimation.scss"
+import QuickNav from './QuickNav';
 
 class Title extends React.Component
 {
@@ -46,11 +47,7 @@ class Title extends React.Component
                                     </Tween>
                                     <Timeline target={
                                         <div className="title-extra">
-                                            <ul>
-                                                <li>Art</li>
-                                                <li>Websites</li>
-                                                <li>Code</li>
-                                            </ul>
+                                            <QuickNav />
                                         </div>}>
                                         <Tween
                                             from={{ opacity: "0", top: "100%" }}
