@@ -70,6 +70,8 @@ a {
   width: 100%;
   height: 100vh;
 
+  z-index: 50;
+
   .title,
   .title-deco {
     position: absolute;
@@ -175,75 +177,53 @@ footer {
 
 //|| Navbar
 .nav-bar {
-  background-color: $cyan;
+  background-color: $black;
 
-  // padding: 0.7rem 5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
 
-  transition: 0.3s $easing;
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  z-index: 10;
+  width: 10rem;
+  height: 75vh;
 
-  width: 100px;
-  height: 100px;
+  overflow: hidden;
+  border-radius: 3px;
 
-  &:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    width: 100vw;
-    height: 100px;
+  display: flex;
+  // justify-content: space-between;
 
-    nav {
-      opacity: 1;
-    }
+  .progress {
+    background-color: $cyan;
+
+    flex-basis: 5%;
+    width: 5%;
   }
 
   nav {
-    opacity: 0;
-
-    display: flex;
-    justify-content: center;
-
-    .section {
-      background-color: rgba($cyan, 0.5);
-      border-radius: 3px;
-      margin-left: 0.5rem;
-
-      padding: 0.4rem 0;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    margin-left: 1rem;
+    font-family: "Roboto Mono", monospace;
+    position: relative;
 
     .nav-link {
-      margin: 2rem 0.5rem;
-      transition: 0.3s;
-      padding: 0.4rem 0;
+      display: block;
+      position: absolute;
+      transform: translateY(-50%);
 
-      box-shadow: inset 0px 0px 0px 0px $text;
-      &:hover {
-        box-shadow: inset 0px -5px 0px 0px $text;
-      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background-color: $cyan;
 
-      &.active {
-        box-shadow: inset 0px 0px 0px 0px $background;
-      }
+        clip-path: polygon(0 0, 0% 100%, 50% 50%);
 
-      &.main {
-        background-color: rgba($cyan, 1);
+        left: -1rem;
+        top: 50%;
 
-        &:first-child {
-          margin-left: 0;
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
-        }
-
-        &:last-child:nth-child(1) {
-          margin-right: 0;
-          padding-right: 0.5rem;
-        }
+        transform: translateY(-50%);
       }
     }
   }
