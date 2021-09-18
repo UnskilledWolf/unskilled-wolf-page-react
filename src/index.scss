@@ -313,7 +313,7 @@ footer {
     border-bottom: 1px solid $text;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .links > .collection {
@@ -346,10 +346,13 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  text-align: center;
+  a,
   p {
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-decoration: none;
+    color: $text;
   }
   .icon {
     display: inline-block;

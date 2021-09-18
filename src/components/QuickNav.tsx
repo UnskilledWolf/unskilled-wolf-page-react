@@ -11,7 +11,9 @@ export default function QuickNav()
         <div className="quick-nav">
             <div className="header">
                 <p>Art</p>
+                <p>/</p>
                 <p>Websites</p>
+                <p>/</p>
                 <p>Code</p>
             </div>
             <div className="links">

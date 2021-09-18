@@ -37,10 +37,10 @@ class Title extends React.Component
                                                 </Tween>
                                             </div>
                                             <div className="scroll-hint">
-                                                <p>
+                                                <a href="/#art">
                                                     Scroll Down <br />
                                                     <img className="icon" alt="" src={require("../assets/scroll-icon.svg")} />
-                                                </p>
+                                                </a>
                                             </div>
                                             <Particles className="particle-footer" params={PARTICLE_PARAMS} style={{ opacity: "1" }} />
                                         </div>
@@ -50,8 +50,8 @@ class Title extends React.Component
                                             <QuickNav />
                                         </div>}>
                                         <Tween
-                                            from={{ opacity: "0", top: "100%" }}
-                                            to={{ opacity: "1", top: "50%" }}
+                                            from={{ opacity: "0", top: "100%", display: "none" }}
+                                            to={{ opacity: "1", top: "50%", display: "block" }}
                                         />
                                     </Timeline>
                                 </div>
