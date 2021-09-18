@@ -1,56 +1,37 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-interface INavBarState
-{
-    progress: number,
-    intervalId: number
-}
-
-export default class NavBar extends Component<{}, INavBarState>
+export default class Navbar extends Component<{}, { full: boolean, initialShow: boolean }>
 {
     state = {
-        progress: 0,
-        intervalId: -69
+        full: false,
+        initialShow: false
     }
 
-    getScrollPercent = (): number =>
+    toggleFull = () =>
     {
-        const h = document.documentElement
-        const b = document.body
-        return (h.scrollTop || b.scrollTop) / ((h.scrollHeight || b.scrollHeight) - h.clientHeight) * 100;
-        //https://stackoverflow.com/a/8028584
-    }
-
-    componentDidMount()
-    {
-        const intervalId = setInterval(() =>
-        {
-            this.setState({ progress: this.getScrollPercent() });
-        }, 10);
-
-        this.setState({ intervalId: intervalId as any })
-    }
-
-    componentWillUnmount()
-    {
-        clearInterval(this.state.intervalId);
+        this.setState({ full: !this.state.full, initialShow: true })
     }
 
     render()
     {
         return (
-            <div className="nav-bar">
-                <div className="progress" style={{ height: `${this.state.progress}%` }} />
-                <nav>
-                    <Link className="nav-link main" to="/#home" style={{ top: "0", transform: "translate(50%)" }}>Home</Link>
-                    <a className="nav-link" href="/#art" style={{ top: "51.5%" }}>Art</a>
-                    <a className="nav-link" href="/#websites" style={{ top: "65%" }}>Websites</a>
-                    <a className="nav-link" href="/#code" style={{ top: "78.3%" }}>Code</a>
-                    <a className="nav-link" href="/#about" style={{ top: "93.9%" }}>About</a>
-                    {/* <Link className="nav-link main" to="/gallery">Gallery</Link> */}
+            <React.Fragment>
+                <div className="nav-icon" onClick={this.toggleFull}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+                </div>
+
+                <nav onClick={this.toggleFull} className={`nav-full frost-bg ${this.state.full ? "show" : "hide"}`} style={{ display: this.state.initialShow ? "flex" : "none" }}>
+                    <Link className="nav-link" to="/#home">Home</Link>
+                    <div className="sub">
+                        <a className="nav-link" href="/#art">Art</a>
+                        <a className="nav-link" href="/#websites">Websites</a>
+                        <a className="nav-link" href="/#code">Code</a>
+                        <a className="nav-link" href="/#about">About</a>
+                    </div>
+                    <Link className="nav-link" to="/gallery">Gallery</Link>
                 </nav>
-            </div>
+            </React.Fragment>
         )
     }
 }

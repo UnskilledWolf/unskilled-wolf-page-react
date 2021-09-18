@@ -70,8 +70,6 @@ a {
   width: 100%;
   height: 100vh;
 
-  z-index: 50;
-
   .title,
   .title-deco {
     position: absolute;
@@ -176,54 +174,118 @@ footer {
 }
 
 //|| Navbar
-.nav-bar {
-  background-color: $black;
+.nav-icon {
+  z-index: 20;
 
   position: fixed;
-  z-index: 20;
-  top: 50%;
-  right: 10px;
-  transform: translate(0, -50%);
+  top: 0.5rem;
+  right: 0.5rem;
 
-  width: 10rem;
-  height: 75vh;
+  fill: $cyan;
 
-  overflow: hidden;
   border-radius: 3px;
+}
+
+.nav-full {
+  z-index: 25;
+  position: fixed;
+
+  top: 0rem;
+  right: 0rem;
+
+  min-width: 10rem;
+  height: 100vh;
+
+  background-color: $black;
+
+  border-radius: 3px;
+  overflow: hidden;
 
   display: flex;
-  // justify-content: space-between;
+  flex-direction: column;
 
-  .progress {
-    background-color: $cyan;
+  transform: translate(110%, 0);
 
-    flex-basis: 5%;
-    width: 5%;
+  .nav-link {
+    color: $text;
+    text-decoration: none;
+
+    transition: 0.3s $easing;
+
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+
+    border-collapse: collapse;
+
+    &:hover {
+      color: $cyan;
+    }
+
+    &:first-child {
+      padding-top: 0.5rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+    }
   }
 
-  nav {
-    margin-left: 1rem;
-    font-family: "Roboto Mono", monospace;
-    position: relative;
+  .sub {
+    font-style: italic;
 
-    .nav-link {
-      display: block;
-      position: absolute;
-      transform: translateY(-50%);
+    border-left: 2px solid $text;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    & > * {
+      margin-left: 0.5rem;
+      padding-left: 0;
 
       &::before {
-        content: "";
+        content: "─";
         position: absolute;
-        width: 1rem;
-        height: 1rem;
-        background-color: $cyan;
 
-        clip-path: polygon(0 0, 0% 100%, 50% 50%);
+        transform: translateX(-0.7rem);
+      }
 
-        left: -1rem;
-        top: 50%;
+      &:first-child {
+        padding-top: 0rem;
+      }
 
-        transform: translateY(-50%);
+      &:last-child {
+        padding-bottom: 0rem;
+      }
+    }
+    // &::before {
+    //   content: "├";
+    // }
+  }
+
+  &.show {
+    animation: nav-show 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal forwards;
+
+    @keyframes nav-show {
+      from {
+        transform: translate(110%, 0);
+      }
+      to {
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  &.hide {
+    animation: nav-hide 0.4s cubic-bezier(0.7, 0, 0.84, 0) 0s 1 normal forwards;
+
+    @keyframes nav-hide {
+      to {
+        transform: translate(110%, 0);
+      }
+      from {
+        transform: translate(0, 0);
       }
     }
   }
