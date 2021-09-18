@@ -230,12 +230,12 @@ footer {
       margin-left: 0.5rem;
       padding-left: 0;
 
-      &::before {
-        content: "─";
-        position: absolute;
+      // &::before {
+      //   content: "─";
+      //   position: absolute;
 
-        transform: translateX(-0.7rem);
-      }
+      //   transform: translateX(-0.7rem);
+      // }
 
       &:first-child {
         padding-top: 0rem;
@@ -245,9 +245,6 @@ footer {
         padding-bottom: 0rem;
       }
     }
-    // &::before {
-    //   content: "├";
-    // }
   }
 
   &.show {

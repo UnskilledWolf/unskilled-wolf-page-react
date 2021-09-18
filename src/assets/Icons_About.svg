@@ -1,0 +1,19 @@
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <rect x="94.61" width="10.76" height="200" />
+    <g>
+        <rect x="119.31" y="30" width="18.7" height="19.18" />
+        <rect x="119.31" y="90.33" width="18.7" height="19.18" />
+        <rect x="119.31" y="150.82" width="18.7" height="19.18" />
+        <rect x="150.38" y="30" width="18.7" height="19.18" />
+        <rect x="150.38" y="90.33" width="18.7" height="19.18" />
+        <rect x="150.38" y="150.82" width="18.7" height="19.18" />
+        <rect x="181.3" y="30" width="18.7" height="19.18" />
+        <rect x="181.3" y="90.33" width="18.7" height="19.18" />
+        <rect x="181.3" y="150.82" width="18.7" height="19.18" />
+    </g>
+    <g>
+        <rect y="30" width="80.69" height="19.18" />
+        <rect y="90.33" width="80.69" height="19.18" />
+        <rect y="150.82" width="80.69" height="19.18" />
+    </g>
+</svg>
