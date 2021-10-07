@@ -3,10 +3,10 @@ export interface IImage
     title: string,
     type: string,
     old: boolean,
-    tags: [string],
+    tags?: [string],
     file: string,
     date: Date,
-    id: string
+    id?: string
 }
 
 export interface IImageThumb

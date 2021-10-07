@@ -4,9 +4,19 @@ import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Particles from 'react-particles-js';
 import { PARTICLE_PARAMS } from './particleParams';
+import { GraphQLClient } from 'graphql-request'
 
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
+import Image from './pages/Image';
+
+const SERVER_URL = "https://graphql.fauna.com/graphql";
+const client = new GraphQLClient(SERVER_URL, {
+  headers: {
+    authorization: `Bearer ${process.env.REACT_APP_READ_ONLY_KEY}`
+  }
+})
+
 
 function App()
 {
@@ -17,7 +27,20 @@ function App()
       <div className="App">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/gallery" exact component={Gallery} />
+          <Route path="/gallery" exact render={(props) =>
+            <Gallery
+              {...props}
+              GQLClient={client}
+              key="gallery"
+            />
+          } />
+          <Route path="/gallery/img/:id" render={(props) =>
+            <Image
+              {...props}
+              GQLClient={client}
+              key={"img/" + props.match.params.id}
+            />
+          } />
         </Switch>
 
         <footer>

@@ -561,6 +561,26 @@ footer {
   }
 }
 
+//|| Image
+#image {
+  margin-top: 3rem;
+  justify-content: center;
+  img {
+    max-width: 100%;
+    max-height: 50vh;
+    border-radius: 3px;
+  }
+}
+
+#image-description {
+  display: block;
+
+  h1,
+  p {
+    text-align: center;
+  }
+}
+
 //|| Small Classes
 .spacer {
   margin-bottom: 3rem;
@@ -636,6 +656,24 @@ footer {
   &:hover {
     background-color: lighten($cyan, 10%);
     transform: scale(1.01);
+  }
+}
+
+.back-button {
+  z-index: 2;
+
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+
+  fill: $cyan;
+
+  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+
+  transition: 0.3s $easing;
+
+  &:hover {
+    fill: $text;
   }
 }
 

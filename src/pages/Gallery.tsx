@@ -2,14 +2,9 @@ import React, { Component } from 'react'
 import { IImageThumb } from '../types';
 import { gql, GraphQLClient } from 'graphql-request'
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton';
 
-const SERVER_URL = "https://graphql.fauna.com/graphql";
 const PAGE_SIZE = 5;
-const client = new GraphQLClient(SERVER_URL, {
-    headers: {
-        authorization: `Bearer ${process.env.REACT_APP_READ_ONLY_KEY}`
-    }
-})
 
 interface IGalleryState
 {
@@ -17,7 +12,7 @@ interface IGalleryState
     after: string
 }
 
-export default class Gallery extends Component<{}, IGalleryState>
+export default class Gallery extends Component<{ GQLClient: GraphQLClient }, IGalleryState>
 {
     state = {
         after: "",
@@ -41,7 +36,7 @@ export default class Gallery extends Component<{}, IGalleryState>
         }
         `;
 
-        client.request(query)
+        this.props.GQLClient.request(query)
             .then((data) => this.setState(
                 {
                     images: data.allImages.data.map((img: any) =>
@@ -55,13 +50,13 @@ export default class Gallery extends Component<{}, IGalleryState>
                     }),
                     after: data.allImages.after
                 }
-            ), () => { console.log(this.state.images) })
+            ))
     }
 
     renderImages = () =>
     {
         return this.state.images.map((img: IImageThumb, i) =>
-            <Link className="gallery-img" key={i} to={`/gallery/image/${img.id}`}>
+            <Link className="gallery-img" key={i} to={`/gallery/img/${img.id}`}>
                 <img src={this.getThumbnail(img.file)} alt={`${img.title} Thumbnail`} />
                 <div className="info">
                     <p className="title">{img.title}</p>
@@ -95,6 +90,7 @@ export default class Gallery extends Component<{}, IGalleryState>
     {
         return (
             <div id="gallery">
+                <BackButton to="/" />
                 <h1>Gallery</h1>
                 <div className="gallery-main">
                     {this.renderImages()}
