@@ -1,3 +1,4 @@
+# Archived version of the never quite finished of the v2 of my page
 # My website, but Uncompiled
 
 This project was made with [Create React App](https://github.com/facebook/create-react-app).
