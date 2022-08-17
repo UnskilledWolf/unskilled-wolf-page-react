@@ -1,19 +1,24 @@
 import React, { Component } from 'react'
 
-export default class Article extends Component<{ image: string, title: string, id?: string }, {}>
+type Props = {
+    image: string,
+    title: string,
+    id?: string,
+    children?: JSX.Element | JSX.Element[],
+}
+export default function Article({ image, title, id, children }: Props)
 {
-    render()
-    {
-        return (
-            <div className="article" id={this.props.id}>
-                <div className="article-img">
-                    <img alt="" src={this.props.image} />
-                </div>
-                <div className="content">
-                    <h2>{this.props.title}</h2>
-                    <p>{this.props.children}</p>
-                </div>
+
+    return (
+        <div className="article" id={id}>
+            <div className="article-img">
+                <img alt="" src={image} />
             </div>
-        )
-    }
+            <div className="content">
+                <h2>{title}</h2>
+                <p>{children}</p>
+            </div>
+        </div>
+    )
+
 }

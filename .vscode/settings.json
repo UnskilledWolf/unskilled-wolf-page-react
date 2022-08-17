@@ -11,9 +11,10 @@
     ],
     "cSpell.enabled": true,
     "cSpell.words": [
-        "Ludum",
-        "Unmount",
         "gsap",
-        "scrollmagic"
+        "Ludum",
+        "scrollmagic",
+        "tsparticles",
+        "Unmount"
     ]
 }
