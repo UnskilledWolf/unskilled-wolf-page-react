@@ -78,12 +78,20 @@ a {
   }
 
   .logo {
-    .logo-img {
+    #page-logo {
       position: absolute;
-      height: 30rem;
-      left: 5%;
-      top: 5%;
-      fill: white;
+      width: 50rem;
+      height: 50rem;
+
+      top: 10%;
+      left: 10%;
+      transform: translate(-50%, -50%) rotate(15deg);
+
+      opacity: 0.2;
+
+      & > polygon {
+        stroke: gray;
+      }
     }
 
     h1 {
@@ -102,27 +110,40 @@ a {
   }
 
   .links {
-    background-color: $black;
-    background-image: url("/assets/background.svg");
-    background-repeat: repeat;
-    background-size: 2%;
+    background-color: $gray;
+
     clip-path: polygon(75% 0, 100% 0%, 100% 100%, 25% 100%);
+    overflow: hidden;
 
     .links-list {
       position: absolute;
       bottom: 25%;
       right: 15%;
 
-      display: flex;
+      padding: 0.1rem 1.5rem;
+      border-right: 1px solid $white;
 
-      .link-texts > li {
-        a {
-          color: $white;
-          text-decoration: none;
+      a {
+        display: block;
+        font-size: 2rem;
+        color: $white;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+          margin-right: 1rem;
+          padding-top: 0.5rem;
+        }
+
+        span {
           transform: translateX(0%);
-
-          &:hover {
-            transform: translateX(50%);
+          transition: transform 0.3s $easing;
+        }
+        &:hover {
+          span {
+            transform: translateX(10%);
           }
         }
 
@@ -132,18 +153,45 @@ a {
           border-bottom: none;
         }
       }
+    }
 
-      .link-icons > li {
-        padding-bottom: 5px;
+    & > svg {
+      position: absolute;
+      bottom: -30%;
+      right: -10%;
+      display: block;
+
+      #grid-block-1 {
+        animation: block-float 60s $easing 10s infinite normal forwards;
       }
 
-      ul {
-        list-style: none;
+      #grid-block-2 {
+        animation: block-float 45s $easing 30s infinite normal forwards;
+      }
 
-        font-size: 2rem;
+      #grid-block-3 {
+        animation: block-float 35s $easing 1s infinite normal forwards;
+      }
 
-        li {
-          text-align: right;
+      @keyframes block-float {
+        0% {
+          transform: translateY(0%);
+        }
+
+        25% {
+          transform: translateY(0%);
+        }
+
+        50% {
+          transform: translateY(-10%);
+        }
+
+        75% {
+          transform: translateY(-10%);
+        }
+
+        100% {
+          transform: translateY(0%);
         }
       }
     }
@@ -227,6 +275,25 @@ footer {
   &:hover {
     background-color: lighten($cyan, 10%);
     transform: scale(1.01);
+  }
+}
+
+.frost-bg {
+  background: none !important;
+  backdrop-filter: blur(3px);
+  &::after {
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #96adb0;
+    opacity: 0.2;
+    content: "";
   }
 }
 

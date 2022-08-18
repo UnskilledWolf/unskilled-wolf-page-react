@@ -1,30 +1,25 @@
 import React from 'react';
 import { SiDeviantart, SiGithub, SiTwitch } from 'react-icons/si';
 import { GoChevronDown } from 'react-icons/go'
+import { ReactComponent as Background } from '../assets/background.svg'
+import { ReactComponent as Logo } from '../assets/hexagon.svg'
 
 export default function Title()
 {
     return (
         <div className="title">
             <div className="logo">
-                <img className="logo-img" src="/assets/logo.svg" />
+                <Logo id="page-logo" />
                 <h1>Unskilled Wolf</h1>
                 <h2>Code, Art, 3D</h2>
             </div>
             <div className="links">
-                <div className="links-list">
-                    <ul className='link-icons'>
-                        <li><SiTwitch /></li>
-                        <li><SiDeviantart /></li>
-                        <li><SiGithub /></li>
-                        <li><GoChevronDown /></li>
-                    </ul>
-                    <ul className='link-texts'>
-                        <li><a href="#">Twitch</a></li>
-                        <li><a href="#">DeviantArt</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                <Background />
+                <div className="links-list frost-bg">
+                    <a href="#"><SiTwitch /> <span>Twitch</span></a>
+                    <a href="#"><SiDeviantart /> <span>DeviantArt</span></a>
+                    <a href="#"><SiGithub /> <span>GitHub</span></a>
+                    <a href="#about"><GoChevronDown /> <span>About</span></a>
                 </div>
             </div>
             <div className="scroll-hint">

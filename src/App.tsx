@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from './components/Title';
-// import Particles from 'react-tsparticles';
 
 export default function App()
 {
@@ -9,9 +8,13 @@ export default function App()
       <div className="App">
         <Title />
 
+        <h3>Art</h3>
+        <h3>Code</h3>
+        <h3>3D</h3>
+        <h3 id="about">About</h3>
+
         <footer>
           <p className="footer-text">© Unskilled Wolf</p>
-          {/* <Particles className="particle-footer" url="./particles.json" /> */}
         </footer>
       </div>
     </React.Fragment>
