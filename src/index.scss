@@ -1,6 +1,6 @@
 $cyan: #00a3b9;
 $black: #0d0d0d;
-$gray: #464646;
+$gray: #181818;
 $white: #ffffff;
 
 $background: $black;
@@ -15,20 +15,20 @@ html {
   overflow-x: hidden;
 
   scrollbar-width: thin;
-  scrollbar-color: $cyan $background;
+  scrollbar-color: $black $white;
 
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 5px;
-  background: transparent;
+  background: $black;
 }
 ::-webkit-scrollbar-thumb {
-  background: $cyan;
+  background: $white;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hack", monospace;
 
   background-color: $background;
   color: $text;
@@ -57,13 +57,97 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   margin: 0;
 }
 
 a {
   color: $cyan;
+}
+
+//|| Title
+.title {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  .logo,
+  .links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    .logo-img {
+      position: absolute;
+      height: 30rem;
+      left: 5%;
+      top: 5%;
+      fill: white;
+    }
+
+    h1 {
+      position: absolute;
+      height: 30rem;
+      left: 15%;
+      top: calc(5% + 10rem);
+    }
+
+    h2 {
+      position: absolute;
+      height: 30rem;
+      left: 15%;
+      top: calc(15% + 10rem);
+    }
+  }
+
+  .links {
+    background-color: $black;
+    background-image: url("/assets/background.svg");
+    background-repeat: repeat;
+    background-size: 2%;
+    clip-path: polygon(75% 0, 100% 0%, 100% 100%, 25% 100%);
+
+    .links-list {
+      position: absolute;
+      bottom: 25%;
+      right: 15%;
+
+      display: flex;
+
+      .link-texts > li {
+        a {
+          color: $white;
+          text-decoration: none;
+          transform: translateX(0%);
+
+          &:hover {
+            transform: translateX(50%);
+          }
+        }
+
+        border-bottom: 1px solid $white;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .link-icons > li {
+        padding-bottom: 5px;
+      }
+
+      ul {
+        list-style: none;
+
+        font-size: 2rem;
+
+        li {
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 
 //|| Footer
