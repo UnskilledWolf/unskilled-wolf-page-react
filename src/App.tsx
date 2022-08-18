@@ -10,6 +10,15 @@ export default function App()
 
         <h3>Art</h3>
         <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
+        <h3>Code</h3>
         <h3>3D</h3>
         <h3 id="about">About</h3>
 

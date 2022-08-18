@@ -65,6 +65,27 @@ a {
   color: $cyan;
 }
 
+svg {
+  .a,
+  .c {
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+  }
+
+  .a {
+    stroke: #0d0d0d;
+  }
+
+  .b {
+    fill: #00a3b9;
+  }
+
+  .c {
+    stroke: #00a3b9;
+  }
+}
+
 //|| Title
 .title {
   position: relative;
@@ -156,10 +177,16 @@ a {
     }
 
     & > svg {
-      position: absolute;
+      position: fixed;
       bottom: -30%;
       right: -10%;
       display: block;
+
+      &.svg-fixed {
+        position: absolute;
+        bottom: -29.5%;
+        right: -9.5%;
+      }
 
       #grid-block-1 {
         animation: block-float 60s $easing 10s infinite normal forwards;
