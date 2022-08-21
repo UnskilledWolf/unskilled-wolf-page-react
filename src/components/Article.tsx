@@ -4,19 +4,20 @@ type Props = {
     image: string,
     title: string,
     id?: string,
+    right?: boolean,
     children?: JSX.Element | JSX.Element[],
 }
-export default function Article({ image, title, id, children }: Props)
+export default function Article({ image, title, id, right, children }: Props)
 {
 
     return (
-        <div className="article" id={id}>
-            <div className="article-img">
-                <img alt="" src={image} />
-            </div>
+        <div className={`article ${right ? "right" : ""}`} id={id}>
+            <div className="article-img" style={{ backgroundImage: `url(${image})` }} />
             <div className="content">
-                <h2>{title}</h2>
-                <p>{children}</p>
+                <div className="content-text">
+                    <h2>{title}</h2>
+                    {children}
+                </div>
             </div>
         </div>
     )

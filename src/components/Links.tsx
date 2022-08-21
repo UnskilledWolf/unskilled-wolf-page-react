@@ -8,13 +8,13 @@ export default function Links()
         <div className="links">
             <h2>Links</h2>
             <div className="collection">
-                <LinkBox link="https://www.deviantart.com/hexagonal192" title={<SiDeviantart />} at="hexagonal192" color="#00E59B" tcolor="#000000" />
-                <LinkBox link="https://www.twitch.tv/unskilled_wolf" title={<SiTwitch />} at="Unskilled_Wolf" color="#9147FF" tcolor="#ffffff" />
-                <LinkBox link="https://github.com/UnskilledWolf" title={<SiGithub />} at="UnskilledWolf" color="#24292E" tcolor="#ffffff" />
-                <LinkBox link="https://twitter.com/Unskilled_Wolf" title={<SiTwitter />} at="@Unskilled_Wolf" color="#1DA1F2" tcolor="#ffffff" />
-                <LinkBox link="https://steamcommunity.com/id/unskilled_wolf" title={<SiSteam />} at="Unskilled Wolf" color="#171A21" tcolor="#ffffff" />
-                <LinkBox link="https://osu.ppy.sh/users/15434782" title={<b>osu!</b>} at="UnskilledWolf" color="#AC396D" tcolor="#ffffff" />
-                <LinkBox link="https://www.instagram.com/furryboi.git" title={<SiInstagram />} at="@furryboi.git" color="#CD317D" tcolor="#ffffff" />
+                <LinkBox link="https://www.deviantart.com/hexagonal192" icon={<SiDeviantart />} at="hexagonal192" />
+                <LinkBox link="https://www.twitch.tv/unskilled_wolf" icon={<SiTwitch />} at="Unskilled_Wolf" />
+                <LinkBox link="https://github.com/UnskilledWolf" icon={<SiGithub />} at="UnskilledWolf" />
+                <LinkBox link="https://twitter.com/Unskilled_Wolf" icon={<SiTwitter />} at="@Unskilled_Wolf" />
+                <LinkBox link="https://steamcommunity.com/id/unskilled_wolf" icon={<SiSteam />} at="Unskilled Wolf" />
+                {/* <LinkBox link="https://osu.ppy.sh/users/15434782" icon={<b>osu!</b>} at="UnskilledWolf" /> */}
+                <LinkBox link="https://www.instagram.com/furryboi.git" icon={<SiInstagram />} at="@furryboi.git" />
             </div>
         </div>
     )
