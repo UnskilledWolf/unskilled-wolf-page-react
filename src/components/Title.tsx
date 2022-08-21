@@ -20,20 +20,20 @@ export default function Title()
                     <line className="a" x1="1439.64" y1="785.69" x2="140.6" y2="35.69" />
                     <line className="a" x1="24.13" y1="752.17" x2="1323.16" y2="2.17" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
                     <polygon id="grid-block-1" className="b" points="702.85 226.72 702.85 226.32 702.51 226.52 649.38 257.19 649.38 437.51 702.53 468.2 702.85 468.38 702.85 468.01 753.16 438.96 753.16 255.76 702.85 226.72" />
-                </svg>
+                </svg> */}
                 <svg xmlns="http://www.w3.org/2000/svg" className='svg-fixed' width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
                     <line className="a" x1="70.93" y1="798.97" x2="1369.96" y2="48.97" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
-                    <polygon id="grid-block-2" className="b" points="765.74 430.94 765.74 430.55 765.4 430.74 712.27 461.42 712.27 475.32 765.42 506.01 765.74 506.19 765.74 505.82 816.05 476.77 816.05 459.99 765.74 430.94" />
+                    <polygon id="grid-block-2" className="b" points="767.91 313.26 767.91 312.86 767.57 313.06 714.44 343.73 714.44 475.32 767.59 506.01 767.91 506.19 767.91 505.82 818.22 476.77 818.22 342.3 767.91 313.26" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" className='svg-fixed' width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
                     <line className="a" x1="1392.84" y1="832.49" x2="93.8" y2="82.49" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
-                    <polygon id="grid-block-3" className="b" points="638.47 521.2 638.47 520.8 638.13 521 585 551.67 585 606.34 638.15 637.02 638.47 637.21 638.47 636.84 688.78 607.79 688.78 550.24 638.47 521.2" />
+                    <polygon id="grid-block-3" className="b" points="640.97 504.45 640.97 504.05 640.63 504.25 587.5 534.92 587.5 589.59 640.65 620.28 640.97 620.46 640.97 620.09 691.28 591.04 691.28 533.5 640.97 504.45" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" className='svg-fixed' width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
                     <line className="a" x1="117.49" y1="845.53" x2="1416.53" y2="95.53" />
