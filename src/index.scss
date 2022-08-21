@@ -367,7 +367,13 @@ svg {
   background-repeat: repeat;
   background-size: 5%;
 
-  opacity: 0.8;
+  background-attachment: scroll;
+
+  opacity: 0.4;
+}
+
+#about {
+  height: 35rem;
 }
 
 //|| Footer
@@ -439,7 +445,7 @@ footer {
   background-repeat: repeat;
   background-size: 5%;
 
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .remove-link-style,

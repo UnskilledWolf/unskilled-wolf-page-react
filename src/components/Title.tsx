@@ -43,14 +43,14 @@ export default function Title()
                 </svg>
 
                 <div className="links-list frost-bg">
-                    <a href="#"><SiTwitch /> <span>Twitch</span></a>
-                    <a href="#"><SiDeviantart /> <span>DeviantArt</span></a>
-                    <a href="#"><SiGithub /> <span>GitHub</span></a>
-                    <a href="#about"><GoChevronDown /> <span>About</span></a>
+                    <a href="https://www.twitch.tv/unskilled_wolf"><SiTwitch /> <span>Twitch</span></a>
+                    <a href="https://www.deviantart.com/hexagonal192"><SiDeviantart /> <span>DeviantArt</span></a>
+                    <a href="https://github.com/UnskilledWolf"><SiGithub /> <span>GitHub</span></a>
+                    <a href="#art"><GoChevronDown /> <span>About</span></a>
                 </div>
             </div>
             <div className="scroll-hint">
-                <a href="/#art">
+                <a href="#code">
                     Scroll Down <br />
                     <img className="icon" alt="" src="/assets/scroll-icon.svg" />
                 </a>
