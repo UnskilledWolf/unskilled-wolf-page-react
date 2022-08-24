@@ -1,7 +1,6 @@
 import React from 'react';
 import { SiDeviantart, SiGithub, SiTwitch } from 'react-icons/si';
 import { GoChevronDown } from 'react-icons/go'
-import { ReactComponent as Background } from '../assets/background.svg'
 import { ReactComponent as Logo } from '../assets/hexagon.svg'
 
 export default function Title()
