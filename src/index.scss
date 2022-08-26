@@ -44,12 +44,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 100px;
-  }
 }
 
 h1 {
@@ -229,57 +223,63 @@ svg {
 }
 
 //|| Articles
+.articles {
+  // min-height: 75vh;
+
+  display: flex;
+
+  flex-direction: row;
+
+  margin: 1rem 0;
+}
+
 .article {
   position: relative;
 
-  height: 20rem;
-  overflow: hidden;
+  margin: 0 3rem;
 
-  // margin: 2rem 0;
+  .bg {
+    position: relative;
+    height: 13rem;
 
-  .article-img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
     top: 0;
-    left: 0;
 
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+    background-color: $gray;
+    background-position: center center;
+    background-size: 100% auto;
 
-  .content {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    transition: background-size 0.5s $easing;
 
-    background-color: $black;
-    background: linear-gradient(90deg, $black 50%, rgba($black, 0) 100%);
+    &::after {
+      content: "";
 
-    .content-text {
       position: absolute;
-      width: 50%;
+      width: 100%;
       height: 100%;
       top: 0;
       left: 0;
 
-      margin: 0 1rem;
+      background-color: $black;
+      background: linear-gradient(0deg, $black 1%, rgba($black, 0) 100%);
     }
   }
 
-  &.right {
-    text-align: right;
+  .content {
+    position: relative;
+    top: -5%;
 
-    .content {
-      background: linear-gradient(-90deg, $black 50%, rgba($black, 0) 100%);
+    margin: 0 0.5rem;
 
-      .content-text {
-        left: auto;
-        right: 0;
-      }
+    h2 {
+      border-right: 1px solid $white;
+    }
+  }
+
+  border-bottom: 1px solid $white;
+
+  &:hover {
+    .bg {
+      background-size: 110%;
     }
   }
 }
@@ -291,7 +291,7 @@ svg {
   height: 10rem;
   overflow: hidden;
 
-  // background-color: red;
+  margin: 0.5rem 1rem;
 
   .collection {
     display: flex;
@@ -308,8 +308,8 @@ svg {
 
       margin: 1rem;
 
-      background-color: $white;
-      color: $black;
+      background-color: $gray;
+      color: $white;
       text-decoration: none;
 
       svg {
@@ -335,7 +335,7 @@ svg {
       &,
       p,
       svg {
-        transition: 0.5s $easing;
+        transition: 0.4s $easing;
       }
 
       &:hover {
@@ -347,7 +347,7 @@ svg {
         svg {
           transform: scale(2);
           top: 50%;
-          opacity: 0.3;
+          color: $gray;
         }
 
         p {
@@ -358,28 +358,45 @@ svg {
   }
 }
 
-#about > .article-img {
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
+.links,
+#about {
+  margin: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
 
-  background-image: url("/images/Seperator.png");
-  background-repeat: repeat;
-  background-size: 5%;
-
-  background-attachment: scroll;
-
-  opacity: 0.4;
+  h2 {
+    text-align: center;
+  }
 }
 
 #about {
-  height: 35rem;
+  margin: 1rem 15rem;
+
+  h3 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+#bottom-img {
+  position: relative;
+
+  height: 20rem;
+
+  margin-top: 1rem;
+
+  background-color: $black;
+  background-image: url("/images/Bottom.svg");
+  background-size: contain;
+  background-position: center top;
+  background-size: 70%;
+
+  opacity: 0.5;
 }
 
 //|| Footer
 footer {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0;
 
   position: absolute;
   bottom: 0;
@@ -390,11 +407,6 @@ footer {
   background-color: darken($background, 5%);
   color: $cyan;
   padding: 5px 0 5px 0;
-
-  .particle-footer {
-    position: relative;
-    top: -90px;
-  }
 
   .footer-text {
     position: absolute;
@@ -536,6 +548,10 @@ footer {
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 2.5rem;
+  }
+
+  .articles {
+    flex-direction: column;
   }
 }
 

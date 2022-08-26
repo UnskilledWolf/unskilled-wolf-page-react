@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 type Props = {
     image: string,
@@ -11,13 +11,11 @@ export default function Article({ image, title, id, right, children }: Props)
 {
 
     return (
-        <div className={`article ${right ? "right" : ""}`} id={id}>
-            <div className="article-img" style={{ backgroundImage: `url(${image})` }} />
+        <div className={`article ${right ? "right" : ""}`} id={id}  >
+            <div className="bg" style={{ backgroundImage: `url(${image})` }} />
             <div className="content">
-                <div className="content-text">
-                    <h2>{title}</h2>
-                    {children}
-                </div>
+                <h2>{title}</h2>
+                {children}
             </div>
         </div>
     )

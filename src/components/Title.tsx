@@ -45,7 +45,7 @@ export default function Title()
                     <a href="https://www.twitch.tv/unskilled_wolf"><SiTwitch /> <span>Twitch</span></a>
                     <a href="https://www.deviantart.com/hexagonal192"><SiDeviantart /> <span>DeviantArt</span></a>
                     <a href="https://github.com/UnskilledWolf"><SiGithub /> <span>GitHub</span></a>
-                    <a href="#art"><GoChevronDown /> <span>About</span></a>
+                    <a href="#about"><GoChevronDown /> <span>About</span></a>
                 </div>
             </div>
             <div className="scroll-hint">

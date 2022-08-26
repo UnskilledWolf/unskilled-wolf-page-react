@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import LinkBox from './LinkBox'
 import { SiDeviantart, SiGithub, SiTwitter, SiInstagram, SiSteam, SiTwitch } from 'react-icons/si';
 
