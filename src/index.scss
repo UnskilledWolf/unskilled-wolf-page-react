@@ -496,20 +496,18 @@ footer {
 }
 
 .button-link {
-  display: inline-block;
-  text-decoration: none;
-  background-color: $cyan;
-  color: $text;
-  padding: 0.5rem 0.3rem;
-  border-radius: 2px;
-  margin: 0.3rem 0;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
 
-  transition: 0.3s $easing;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 
-  &:hover {
-    background-color: lighten($cyan, 10%);
-    transform: scale(1.01);
-  }
+  color: $cyan;
+
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .frost-bg {
