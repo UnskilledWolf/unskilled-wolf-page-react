@@ -235,6 +235,7 @@ svg {
 
 .article {
   position: relative;
+  width: 100%;
 
   margin: 0 3rem;
 
@@ -519,7 +520,7 @@ footer {
     right: -10%;
     &.svg-fixed {
       bottom: -29.7%;
-      right: -9.7%;
+      right: -9%;
     }
   }
 }

@@ -17,7 +17,7 @@ export default function App()
             <p>Code Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id euismod lectus. Praesent finibus urna tortor, sed sodales ipsum pharetra quis. Aliquam pellentesque nec quam vel sollicitudin. Nulla condimentum metus vehicula ex varius, et congue metus gravida. Mauris dictum, massa in egestas porta, justo nunc eleifend justo, vel pharetra sapien sapien et orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis rhoncus odio. Vivamus malesuada arcu vitae consequat posuere. Curabitur sollicitudin, nisl vitae vestibulum aliquet, dui mauris auctor erat, imperdiet dapibus nibh nunc eget neque. Aenean porta imperdiet risus.</p>
           </Article>
           <Article id="art" title="Art" image='/images/Art.png' right>
-            <p>Art Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id euismod lectus. Praesent finibus urna tortor, sed sodales ipsum pharetra quis. Aliquam pellentesque nec quam vel sollicitudin. Nulla condimentum metus vehicula ex varius, et congue metus gravida. Mauris dictum, massa in egestas porta, justo nunc eleifend justo, vel pharetra sapien sapien et orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis rhoncus odio. Vivamus malesuada arcu vitae consequat posuere. Curabitur sollicitudin, nisl vitae vestibulum aliquet, dui mauris auctor erat, imperdiet dapibus nibh nunc eget neque. Aenean porta imperdiet risus.</p>
+            <p>Art Description. Lorem ipsum dolor sit amet, consectetu pharet nunc eget neque. Aenean porta imperdiet risus.</p>
           </Article>
           <Article id="3d" title="3D" image='/images/3D.png'>
             <p>3D Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id euismod lectus. Praesent finibus urna tortor, sed sodales ipsum pharetra quis. Aliquam pellentesque nec quam vel sollicitudin. Nulla condimentum metus vehicula ex varius, et congue metus gravida. Mauris dictum, massa in egestas porta, justo nunc eleifend justo, vel pharetra sapien sapien et orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis rhoncus odio. Vivamus malesuada arcu vitae consequat posuere. Curabitur sollicitudin, nisl vitae vestibulum aliquet, dui mauris auctor erat, imperdiet dapibus nibh nunc eget neque. Aenean porta imperdiet risus.</p>
@@ -35,7 +35,7 @@ export default function App()
           <a href="mailto:axiom@unskilledwolf.io">axiom@unskilledwolf.io</a>
         </div>
 
-        <div className="separator" />
+        {/* <div className="separator" /> */}
         <div id="bottom-img" />
 
         <footer>

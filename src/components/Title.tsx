@@ -10,7 +10,7 @@ export default function Title()
             <div className="logo">
                 <Logo id="page-logo" />
                 <h1>Unskilled Wolf</h1>
-                <h2>Code, Art, 3D</h2>
+                <h2>Code / Art / 3D</h2>
             </div>
             <div className="links">
 
