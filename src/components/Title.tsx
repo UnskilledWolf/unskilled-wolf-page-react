@@ -10,7 +10,7 @@ export default function Title()
             <div className="logo">
                 <Logo id="page-logo" />
                 <h1>Unskilled Wolf</h1>
-                <h2>Code / Art / 3D</h2>
+                <h2>Code <span>/</span> Art <span>/</span> 3D</h2>
             </div>
             <div className="links">
 
@@ -19,9 +19,6 @@ export default function Title()
                     <line className="a" x1="1439.64" y1="785.69" x2="140.6" y2="35.69" />
                     <line className="a" x1="24.13" y1="752.17" x2="1323.16" y2="2.17" />
                 </svg>
-                {/* <svg xmlns="http://www.w3.org/2000/svg" width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
-                    <polygon id="grid-block-1" className="b" points="702.85 226.72 702.85 226.32 702.51 226.52 649.38 257.19 649.38 437.51 702.53 468.2 702.85 468.38 702.85 468.01 753.16 438.96 753.16 255.76 702.85 226.72" />
-                </svg> */}
                 <svg xmlns="http://www.w3.org/2000/svg" className='svg-fixed' width="1463.77" height="927.2" viewBox="0 0 1463.77 927.2">
                     <line className="a" x1="70.93" y1="798.97" x2="1369.96" y2="48.97" />
                 </svg>

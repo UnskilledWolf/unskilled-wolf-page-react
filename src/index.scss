@@ -123,6 +123,34 @@ svg {
       height: 30rem;
       left: 15%;
       top: calc(15% + 10rem);
+
+      & > span {
+        color: $text;
+
+        animation: title-header-colors 10s ease-in 0s infinite alternate forwards;
+
+        @keyframes title-header-colors {
+          from {
+            color: $text;
+          }
+          10% {
+            color: $text;
+          }
+          90% {
+            color: $cyan;
+          }
+          to {
+            color: $cyan;
+          }
+        }
+
+        &:nth-of-type(1) {
+          animation-delay: 5s;
+        }
+        &:nth-of-type(2) {
+          animation-delay: 6s;
+        }
+      }
     }
   }
 
