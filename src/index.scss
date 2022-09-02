@@ -267,6 +267,7 @@ svg {
   width: 100%;
 
   margin: 0 3rem;
+  padding: 0 0 0.5rem 0;
 
   .bg {
     position: relative;
@@ -326,22 +327,19 @@ svg {
     top: 0;
     left: 0;
 
-    background-color: $black;
-
-    $flip-speed: 0.8s;
-    $flip-easing: cubic-bezier(0.45, 0, 0.55, 1);
+    $flip-speed: 0.4s;
+    $flip-easing: cubic-bezier(0.87, 0, 0.13, 1);
 
     transition-property: transform, opacity;
-    transition-duration: $flip-speed, 0s;
+    transition-duration: $flip-speed, calc($flip-speed/2);
     transition-timing-function: $flip-easing, $flip-easing;
-    transition-delay: 0s, calc($flip-speed/2);
   }
 
   .front {
     // visibility: visible;
     opacity: 1;
     pointer-events: auto;
-    transform: rotateY(0deg);
+    transform: scale(1) translateY(0%);
 
     z-index: 2;
   }
@@ -350,7 +348,7 @@ svg {
     // visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transform: rotateY(180deg);
+    transform: scale(0) translateY(-10%);
   }
 
   &.flipped {
@@ -358,13 +356,13 @@ svg {
       // visibility: hidden;
       opacity: 0;
       pointer-events: none;
-      transform: rotateY(180deg);
+      transform: scale(0) translateY(-10%);
     }
     .back {
       // visibility: visible;
       opacity: 1;
       pointer-events: auto;
-      transform: rotateY(0deg);
+      transform: scale(1) translateY(0%);
     }
   }
 }
