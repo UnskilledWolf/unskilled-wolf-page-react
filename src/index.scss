@@ -261,6 +261,7 @@ svg {
   margin: 1rem 0;
 }
 
+// Normal Article
 .article {
   position: relative;
   width: 100%;
@@ -293,15 +294,16 @@ svg {
     }
   }
 
-  .content {
+  h2 {
+    border-right: 1px solid $white;
+  }
+
+  .content,
+  h2 {
     position: relative;
     top: -5%;
 
     margin: 0 0.5rem;
-
-    h2 {
-      border-right: 1px solid $white;
-    }
   }
 
   border-bottom: 1px solid $white;
@@ -311,6 +313,64 @@ svg {
       background-size: 110%;
     }
   }
+}
+
+// Flippable Article
+.article > .content.flippable {
+  position: relative;
+
+  .front,
+  .back {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    background-color: $black;
+
+    $flip-speed: 0.8s;
+    $flip-easing: cubic-bezier(0.45, 0, 0.55, 1);
+
+    transition-property: transform, opacity;
+    transition-duration: $flip-speed, 0s;
+    transition-timing-function: $flip-easing, $flip-easing;
+    transition-delay: 0s, calc($flip-speed/2);
+  }
+
+  .front {
+    // visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: rotateY(0deg);
+
+    z-index: 2;
+  }
+
+  .back {
+    // visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(180deg);
+  }
+
+  &.flipped {
+    .front {
+      // visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transform: rotateY(180deg);
+    }
+    .back {
+      // visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+#code > .content > .back > button {
+  font-size: 2rem;
 }
 
 // || Links

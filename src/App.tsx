@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Article from './components/Article';
 import Links from './components/Links';
 import Title from './components/Title';
+import { MdOutlineArrowBack } from 'react-icons/md'
 
+/**
+ * Main entry point of the single-page site
+ * @component
+ */
 export default function App()
 {
+  // Track weather the code article is flipped or not
+  const [flipCodeArticle, setFlipCodeArticle] = useState(false)
+
   return (
     <React.Fragment>
       <div className="App">
@@ -13,13 +21,27 @@ export default function App()
         <div className="separator" />
 
         <div className="articles">
-          <Article id="code" title='Code' image='/images/Code.png'>
-            <p>I have experience in various computer fields. From web design to game making, I have worked on many things.</p>
-            <p>Some of my projects have included creating games using engines like Godot and Unity3D in C#. Using Typescript, I halve also designed react websites and express js backends. I'm also able to create scripts to automate many tasks in Python.</p>
-            <p>A list of things that I have experimented with is <button className="button-link">here</button>.</p>
-            <p>A collection of portfolio projects will be included here in the future. Meanwhile, you can find this site's source code <a href="https://github.com/UnskilledWolf/unskilled-wolf-page-react">here</a>.</p>
+          <Article id="code" title='Code' image='/images/Code.png' flippable flipped={flipCodeArticle}>
+            <div className="front">
+              <p>I have experience in various computer fields. From web design to game making, I have worked on many things.</p>
+              <p>Some of my projects have included creating games using engines like Godot and Unity3D in C#. Using Typescript, I halve also designed react websites and express js backends. I'm also able to create scripts to automate many tasks in Python.</p>
+              <p>A list of things that I have experimented with is <button className="button-link" onClick={() => { setFlipCodeArticle(!flipCodeArticle) }}>here</button>.</p>
+              <p>A collection of portfolio projects will be included here in the future. Meanwhile, you can find this site's source code <a href="https://github.com/UnskilledWolf/unskilled-wolf-page-react">here</a>.</p>
+            </div>
+            <div className="back">
+              <ul>
+                <li>Games in Unity3D(C#) and Godot(GDScript); some are published for the Ludum Dare Game Jam</li>
+                <li>Websites using React; many with a focus on unique designs aided by Sass</li>
+                <li>REST and GraphQL APIs using Typescript</li>
+                <li>Databases using MariaDB, SQLite, and MongoDB</li>
+                <li>Visualizations in P5.js and Processing 3/4(Java)</li>
+                <li>Various adventures in Linux, including personal PC use and basic server setup</li>
+                <li>Tic-80 games in Lua</li>
+              </ul>
+              <button className="button-link" onClick={() => { setFlipCodeArticle(!flipCodeArticle) }}><MdOutlineArrowBack /></button>
+            </div>
           </Article>
-          <Article id="art" title="Art" image='/images/Art.png' right>
+          <Article id="art" title="Art" image='/images/Art.png'>
             <p>I create digital and occasionally traditional art. While my skills in this field are still in need of improvement, I strive to enhance my methods with each artwork.</p>
             <p>In addition to 2D art, I'm also able to create vector graphic designs. Another medium that I sometimes work with is video-editing and visual effects. In the future, I will also focus on learning 2D animation.</p>
             <p>Some software that I am familiar with includes Adobe Photoshop, Adobe Illustrator, Adobe After Effects, and Procreate.</p>

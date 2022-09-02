@@ -2,6 +2,10 @@ import React from 'react'
 import LinkBox from './LinkBox'
 import { SiDeviantart, SiGithub, SiTwitter, SiInstagram, SiSteam, SiTwitch } from 'react-icons/si';
 
+/**
+ * List of social media links
+ * @component
+ */
 export default function Links()
 {
     return (

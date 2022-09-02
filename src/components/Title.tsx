@@ -3,6 +3,10 @@ import { SiDeviantart, SiGithub, SiTwitch } from 'react-icons/si';
 import { GoChevronDown } from 'react-icons/go'
 import { ReactComponent as Logo } from '../assets/hexagon.svg'
 
+/**
+ * The title of the page.
+ * @component
+ */
 export default function Title()
 {
     return (
