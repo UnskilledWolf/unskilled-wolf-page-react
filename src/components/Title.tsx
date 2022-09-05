@@ -1,7 +1,6 @@
 import React from 'react';
 import { SiDeviantart, SiGithub, SiTwitch } from 'react-icons/si';
 import { GoChevronDown } from 'react-icons/go'
-import { ReactComponent as Logo } from '../assets/hexagon.svg'
 
 /**
  * The title of the page.
@@ -12,7 +11,7 @@ export default function Title()
     return (
         <div className="title">
             <div className="logo">
-                <Logo id="page-logo" />
+                <img src="/assets/hexagon.svg" alt="low opacity gray hexagon" id="page-logo" />
                 <h1>Unskilled Wolf</h1>
                 <h2>Code <span>/</span> Art <span>/</span> 3D</h2>
             </div>
